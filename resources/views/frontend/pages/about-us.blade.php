@@ -9,9 +9,7 @@
           <div class="container">
             <div class="d-flex align-items-center w-100 h-100">
               <div class="text-white" style="max-width: 800px;">
-                <h1 class="fw-medium mb-5">EXPERIENCE THE <span class="font-rubik color-1">HASSLE-FREE <br class="d-none d-md-block">DELIVERY</span></h1>
-                <p class="mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque quaerat aliquid non dicta iusto tempore nam omnis voluptas voluptate consequuntur? Dolor quidem excepturi placeat quia?</p>
-                <a href="" class="btn btn-1 btn-border-left">LEARN MORE</a>
+                <h1 class="fw-medium mb-5 pb-5 ps-5">ABOUT US</h1>
               </div>
             </div>
           </div>
