@@ -19,4 +19,4 @@
   </li>
 </ul>
 <hr class="d-block d-lg-none">
-<a href="" class="btn btn-1 fs-12px">TRACK YOUR PARCEL</a>
+<a href="" class="btn btn-1 fs-14px">TRACK YOUR PARCEL</a>

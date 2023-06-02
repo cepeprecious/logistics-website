@@ -1,7 +1,7 @@
-<header class="position-fixed top-0 w-100">
+<header class="position-fixed top-0 z-3 w-100">
   <div class="container">
     <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-      <a class="navbar-brand" href="{{ url('') }}">Navbar</a>
+      <a class="navbar-brand" href="{{ url('') }}">LOGO</a>
       {{-- <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa-solid fa-bars"></i>
       </button> --}}
