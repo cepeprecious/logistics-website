@@ -1,0 +1,9 @@
+Color Scheme Use:
+
+ff6d2e - Button
+0b3b5e - Font
+
+Font style
+Header - Rubik font
+Pharagraph/body - Roboto Condensed font
+
