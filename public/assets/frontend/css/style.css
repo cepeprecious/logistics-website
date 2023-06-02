@@ -146,11 +146,20 @@ header.on-scroll .navbar-brand {
 }
 
 .banner .banner-img {
-  min-height: 700px;
+  min-height: 500px;
   object-fit: cover;
   object-position: center;
 }
 
+.banner .banner-text {
+  position: absolute;
+  top: 50%;
+}
 
 
 /* Home Style */
+.home .banner .banner-img {
+  min-height: 700px;
+  object-fit: cover;
+  object-position: center;
+}

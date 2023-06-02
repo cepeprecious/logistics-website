@@ -5,13 +5,9 @@
     <section class="banner">
       <div class="position-relative">
         <img src="{{ asset('assets/frontend/img/other pages banner.png') }}" alt="" class="banner-img img-fluid w-100">
-        <div class="position-absolute top-0 w-100 h-100 header-padding pb-5">
+        <div class="banner-text w-100 text-white">
           <div class="container">
-            <div class="d-flex align-items-center w-100 h-100">
-              <div class="text-white" style="max-width: 800px;">
-                <h1 class="fw-medium mb-5 pb-5 ps-5">ABOUT US</h1>
-              </div>
-            </div>
+            <h1 class="fw-medium ps-lg-5">ABOUT US</h1>
           </div>
         </div>
       </div>

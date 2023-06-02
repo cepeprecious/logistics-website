@@ -3,8 +3,13 @@
 @section('content')
   <section class="contact-us">
     <section class="banner">
-      <div>
+      <div class="position-relative">
         <img src="{{ asset('assets/frontend/img/other pages banner.png') }}" alt="" class="banner-img img-fluid w-100">
+        <div class="banner-text w-100 text-white">
+          <div class="container">
+            <h1 class="fw-medium ps-lg-5">CONTACT US</h1>
+          </div>
+        </div>
       </div>
     </section>
 
