@@ -5,52 +5,52 @@
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
-.blog .blogs-content {
+.blogs .blogs-content {
   margin: 100px 0;
 }
 
-.blog .blogs-content .sidebar {
+.blogs .blogs-content .sidebar {
   padding: 30px;
 }
 
-.blog .blogs-content .sidebar .sidebar-title {
+.blogs .blogs-content .sidebar .sidebar-title {
   font-size: 22px;
 }
 
-.blog .blogs-content .sidebar .sidebar-item {
+.blogs .blogs-content .sidebar .sidebar-item {
   background-color: #f6f6f6
 }
 
-.blog .blogs-content .sidebar .sidebar-item+.sidebar-item {
+.blogs .blogs-content .sidebar .sidebar-item+.sidebar-item {
   margin-top: 40px;
 }
 
-.blog .blogs-content .sidebar .search-form form {
+.blogs .blogs-content .sidebar .search-form form {
   background: #fff;
   border: 1px solid rgba(82, 86, 94, 0.3);
   position: relative;
 }
 
-.blog .blogs-content .sidebar .search-form form .form-control:focus {
+.blogs .blogs-content .sidebar .search-form form .form-control:focus {
   outline: none;
   box-shadow: none;
   border-color: initial;
 }
 
-.blog .blogs-content .sidebar .search-form form .form-control::placeholder {
+.blogs .blogs-content .sidebar .search-form form .form-control::placeholder {
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   padding-left: 10px;
 }
 
-.blog .blogs-content .sidebar .search-form form input[type=text] {
+.blogs .blogs-content .sidebar .search-form form input[type=text] {
   border: 0;
   padding: 4px;
   border-radius: 4px;
   width: calc(100% - 40px);
 }
 
-.blog .blogs-content .sidebar .search-form form button {
+.blogs .blogs-content .sidebar .search-form form button {
   position: absolute;
   top: 0;
   right: 0;
@@ -64,49 +64,49 @@
   line-height: 0;
 }
 
-.blog .blogs-content .sidebar .search-form form button i {
+.blogs .blogs-content .sidebar .search-form form button i {
   line-height: 0;
 }
 
-.blog .blogs-content .sidebar .categories ul {
+.blogs .blogs-content .sidebar .categories ul {
   list-style: none;
   padding: 0;
 }
 
-.blog .blogs-content .sidebar .categories ul li+li {
+.blogs .blogs-content .sidebar .categories ul li+li {
   padding-top: 10px;
 }
 
-.blog .blogs-content .sidebar .categories ul a {
+.blogs .blogs-content .sidebar .categories ul a {
   color: var(--color-secondary);
   transition: 0.3s;
 }
 
-.blog .blogs-content .sidebar .categories ul a:hover {
+.blogs .blogs-content .sidebar .categories ul a:hover {
   color: var(--color-default);
 }
 
-.blog .blogs-content .sidebar .recent-posts img {
+.blogs .blogs-content .sidebar .recent-posts img {
   max-width: 80px;
   margin-right: 15px;
 }
 
-.blog .blogs-content .sidebar .recent-posts h4 {
+.blogs .blogs-content .sidebar .recent-posts h4 {
   font-size: 15px;
   font-weight: bold;
 }
 
-.blog .blogs-content .sidebar .recent-posts h4 a {
+.blogs .blogs-content .sidebar .recent-posts h4 a {
   color: var(--color-secondary);
   transition: 0.3s;
 }
 
-.blog .blogs-content .sidebar .recent-posts h4 a:hover {
+.blogs .blogs-content .sidebar .recent-posts h4 a:hover {
   color: var(--color-primary);
 }
 
 @media (max-width: 768px) {
-  .blog .blogs-content .sidebar {
+  .blogs .blogs-content .sidebar {
     padding: 30px 0px;
   }
 }
