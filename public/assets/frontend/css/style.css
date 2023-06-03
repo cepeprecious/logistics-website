@@ -198,6 +198,10 @@ PAGE CONTENT STYLE
   box-shadow: none;
   background-color: unset;
   color: unset;
+  font-family: 'Rubik', sans-serif;
+  color: var(--color-2);
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .faqs .accordion-button::after {
@@ -206,4 +210,10 @@ PAGE CONTENT STYLE
 
 .faqs .accordion-button:not(.collapsed)::after {
   transform: rotate(0deg) !important;
+}
+
+.faqs .accordion-body {
+  font-family: 'Rubik', sans-serif;
+  color: var(--color-2);
+  font-weight: 500;
 }

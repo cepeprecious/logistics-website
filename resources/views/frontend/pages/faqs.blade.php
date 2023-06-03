@@ -141,57 +141,57 @@
 @section('script')
 <script>
   // Function to handle the responsive behavior
-  function handleResponsiveAccordion() {
-    // Get the accordion items in the first column
-    const accordionItems1 = document.querySelectorAll('#accordionExample1 .accordion-item');
-    // Get the accordion items in the second column
-    const accordionItems2 = document.querySelectorAll('#accordionExample2 .accordion-item');
+  // function handleResponsiveAccordion() {
+  //   // Get the accordion items in the first column
+  //   const accordionOne = document.querySelectorAll('#accordionExample1 .accordion-item');
+  //   // Get the accordion items in the second column
+  //   const accordionTwo = document.querySelectorAll('#accordionExample2 .accordion-item');
 
-    if (window.innerWidth < 992) {
-      // If the screen width is less than 992px (medium and small screens)
-      // Collapse all accordion items in both columns except the first one
-      for (let i = 1; i < accordionItems1.length; i++) {
-        const accordionCollapse = accordionItems1[i].querySelector('.accordion-collapse');
-        const accordionButton = accordionItems1[i].querySelector('.accordion-button');
+  //   if (window.innerWidth < 992) {
+  //     // If the screen width is less than 992px (medium and small screens)
+  //     // Collapse all accordion items in both columns except the first one
+  //     for (let i = 1; i < accordionOne.length; i++) {
+  //       const accordionCollapse = accordionOne[i].querySelector('.accordion-collapse');
+  //       const accordionButton = accordionOne[i].querySelector('.accordion-button');
 
-        accordionCollapse.classList.remove('show');
-        accordionButton.setAttribute('aria-expanded', 'false');
-      }
+  //       accordionCollapse.classList.remove('show');
+  //       accordionButton.setAttribute('aria-expanded', 'false');
+  //     }
 
-      // Collapse all accordion items in the second column
-      for (let i = 0; i < accordionItems2.length; i++) {
-        const accordionCollapse = accordionItems2[i].querySelector('.accordion-collapse');
-        const accordionButton = accordionItems2[i].querySelector('.accordion-button');
+  //     // Collapse all accordion items in the second column
+  //     for (let i = 0; i < accordionTwo.length; i++) {
+  //       const accordionCollapse = accordionTwo[i].querySelector('.accordion-collapse');
+  //       const accordionButton = accordionTwo[i].querySelector('.accordion-button');
 
-        accordionCollapse.classList.remove('show');
-        accordionButton.setAttribute('aria-expanded', 'false');
-      }
-    } else {
-      // If the screen width is 992px or more (large screens)
-      // Show the first accordion item in each column and collapse the rest
-      for (let i = 1; i < accordionItems1.length; i++) {
-        const accordionCollapse = accordionItems1[i].querySelector('.accordion-collapse');
-        const accordionButton = accordionItems1[i].querySelector('.accordion-button');
+  //       accordionCollapse.classList.remove('show');
+  //       accordionButton.setAttribute('aria-expanded', 'false');
+  //     }
+  //   } else {
+  //     // If the screen width is 992px or more (large screens)
+  //     // Show the first accordion item in each column and collapse the rest
+  //     for (let i = 1; i < accordionOne.length; i++) {
+  //       const accordionCollapse = accordionOne[i].querySelector('.accordion-collapse');
+  //       const accordionButton = accordionOne[i].querySelector('.accordion-button');
 
-        accordionCollapse.classList.remove('show');
-        accordionButton.setAttribute('aria-expanded', 'false');
-      }
+  //       accordionCollapse.classList.remove('show');
+  //       accordionButton.setAttribute('aria-expanded', 'false');
+  //     }
 
-      // Show all accordion items in the second column
-      for (let i = 1; i < accordionItems2.length; i++) {
-        const accordionCollapse = accordionItems1[i].querySelector('.accordion-collapse');
-        const accordionButton = accordionItems1[i].querySelector('.accordion-button');
+  //     // Show all accordion items in the second column
+  //     for (let i = 1; i < accordionTwo.length; i++) {
+  //       const accordionCollapse = accordionOne[i].querySelector('.accordion-collapse');
+  //       const accordionButton = accordionOne[i].querySelector('.accordion-button');
 
-        accordionCollapse.classList.remove('show');
-        accordionButton.setAttribute('aria-expanded', 'false');
-      }
-    }
-  }
+  //       accordionCollapse.classList.remove('show');
+  //       accordionButton.setAttribute('aria-expanded', 'false');
+  //     }
+  //   }
+  // }
 
-  // Initial call to handle the responsive behavior on page load
-  handleResponsiveAccordion();
+  // // Initial call to handle the responsive behavior on page load
+  // handleResponsiveAccordion();
 
-  // Event listener for window resize to handle the responsive behavior dynamically
-  window.addEventListener('resize', handleResponsiveAccordion);
+  // // Event listener for window resize to handle the responsive behavior dynamically
+  // window.addEventListener('resize', handleResponsiveAccordion);
 </script>
 @endsection
