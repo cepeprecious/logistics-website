@@ -183,6 +183,11 @@ PAGE CONTENT STYLE
 
 
 /* ___ FAQs Style ___ */
+.faqs .accordion-header button {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 .faqs .accordion-item {
   border: none;
   border-radius: 0;
@@ -190,8 +195,6 @@ PAGE CONTENT STYLE
 }
 
 .faqs .accordion-button {
-  border: none;
-  border-radius: 0;
   box-shadow: none;
   background-color: unset;
   color: unset;
