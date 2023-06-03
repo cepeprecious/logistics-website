@@ -13,6 +13,7 @@
   text-align: justify;
 }
 
+/* Pagination */
 .our-services .section-1 .pagination .page-link {
   border: none;
   color: var(--color-1);
@@ -20,12 +21,12 @@
   font-weight: 700;
 }
 
-.pagination .page-item.active .page-link {
+.our-services .section-1 .pagination .page-item.active .page-link {
   background-color: var(--color-1);
   color: #fff;
 }
 
-.pagination .page-item:hover .page-link {
+.our-services .section-1 .pagination .page-item:hover .page-link {
   background-color: var(--color-1);
   color: #fff;
 }
