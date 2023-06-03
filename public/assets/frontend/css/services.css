@@ -1,0 +1,31 @@
+.our-services .section-1 {
+  margin-top: 100px;
+}
+
+.our-services .section-1 .card .card-title {
+  color: var(--color-2);
+  font-weight: 700;
+}
+
+.our-services .section-1 .card .card-text {
+  color: var(--color-2);
+  font-family: 'Rubik', sans-serif;
+  text-align: justify;
+}
+
+.our-services .section-1 .pagination .page-link {
+  border: none;
+  color: var(--color-1);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--color-1);
+  color: #fff;
+}
+
+.pagination .page-item:hover .page-link {
+  background-color: var(--color-1);
+  color: #fff;
+}

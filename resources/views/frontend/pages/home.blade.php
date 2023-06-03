@@ -157,7 +157,7 @@
     <section class="section-4">
       <div class="py-5">
         <div class="container">
-          <h1 class="font-geologica fs-large color-2 text-center mb-5">Our Lastest Blogs</h1>
+          <h1 class="font-geologica fs-large color-2 text-center mb-5">Our Latest Blogs</h1>
           <div class="d-flex flex-wrap justify-content-center gap-5">
 
             <div class="item">
