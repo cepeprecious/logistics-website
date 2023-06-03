@@ -47,10 +47,6 @@ h6,
   text-align: justify;
 }
 
-.banner p {
-  /*  */
-}
-
 @media screen and (min-width: 991px) {
   .banner h1 {
     font-size: 50px;
@@ -170,9 +166,41 @@ header.on-scroll .navbar-brand {
 }
 
 
-/* Home Style */
+
+/* --------------------------------------------------------
+PAGE CONTENT STYLE
+--------------------------------------------------------*/
+
+
+
+/* ___ Home Style ___ */
 .home .banner .banner-img {
   min-height: 700px;
   object-fit: cover;
   object-position: center;
+}
+
+
+
+/* ___ FAQs Style ___ */
+.faqs .accordion-item {
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid var(--color-2);
+}
+
+.faqs .accordion-button {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: unset;
+  color: unset;
+}
+
+.faqs .accordion-button::after {
+  transform: rotate(-90deg);
+}
+
+.faqs .accordion-button:not(.collapsed)::after {
+  transform: rotate(0deg) !important;
 }

@@ -110,7 +110,6 @@
 @endsection
 
 @section('style')
-<link rel="stylesheet" href="{{ asset('assets/frontend/css/faqs.css') }}">
 @endsection
 
 @section('script')
