@@ -34,4 +34,8 @@ class PageController extends Controller
     public function contactUs(Request $request) {
         return view('frontend.pages.contact-us');
     }
+
+    public function trackPackage(Request $request) {
+        return view('frontend.pages.track');
+    }
 }

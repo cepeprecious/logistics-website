@@ -23,4 +23,5 @@ Route::controller(FrontendController\PageController::class)->group(function() {
     Route::get('/blogs', 'blogs')->name('blogs');
     Route::get('/blogs-single', 'blogsSingle')->name('blogs-single');
     Route::get('/contact-us', 'contactUs')->name('contact-us');
+    Route::get('/track', 'trackPackage')->name('track');
 });
