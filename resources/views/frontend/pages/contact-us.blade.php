@@ -27,41 +27,32 @@
     <section class="section-2">
       <div class="py-5">
         <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h1 class=" font-roboto-condensed fw-bold color-2 mb-5">Send us a Message</h1>
-              <form action="">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="mb-5">
-                      <input type="text" class="form-control border-0 rounded-0 shadow-1 p-4" name="name" id="name" placeholder="Name">
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-6">
-                    <div class="mb-5">
-                      <input type="text" class="form-control border-0 rounded-0 shadow-1 p-4" name="phonenum" id="phonenum" placeholder="Phone No.">
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-6">
-                    <div class="mb-5">
-                      <input type="email" class="form-control border-0 rounded-0 shadow-1 p-4" name="email" id="email" placeholder="Email Address">
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="mb-5">
-                      <textarea class="form-control border-0 rounded-0 shadow-1 p-4" name="message" id="message" rows="3" placeholder="Message"></textarea>
-                    </div>
-                  </div>
+          <h1 class=" font-roboto-condensed fw-bold color-2 mb-5">Send us a Message</h1>
+          <form action="">
+            <div class="row">
+              <div class="col-12">
+                <div class="mb-5">
+                  <input type="text" class="form-control border-0 rounded-0 shadow-1 p-4" name="name" id="name" placeholder="Name">
                 </div>
-                <div class="col-12">
-                  <button class="btn btn-1 btn-border-left">SUBMIT</button>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="mb-5">
+                  <input type="text" class="form-control border-0 rounded-0 shadow-1 p-4" name="phonenum" id="phonenum" placeholder="Phone No.">
                 </div>
-              </form>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="mb-5">
+                  <input type="email" class="form-control border-0 rounded-0 shadow-1 p-4" name="email" id="email" placeholder="Email Address">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="mb-5">
+                  <textarea class="form-control border-0 rounded-0 shadow-1 p-4" name="message" id="message" rows="3" placeholder="Message"></textarea>
+                </div>
+              </div>
             </div>
-            <div class="col-12 col-lg-4">
-
-            </div>
-          </div>
+            <button class="btn btn-1 btn-border-left">SUBMIT</button>
+          </form>
         </div>
       </div>
     </section>
