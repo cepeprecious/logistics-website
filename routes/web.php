@@ -25,3 +25,7 @@ Route::controller(FrontendController\PageController::class)->group(function() {
     Route::get('/contact-us', 'contactUs')->name('contact-us');
     Route::get('/track', 'trackPackage')->name('track');
 });
+
+Route::get('/login', function () {
+    return view('frontend.pages.login');
+});

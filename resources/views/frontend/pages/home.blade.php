@@ -189,13 +189,12 @@
       </div>
     </section>
 
-
     <section class="section-5">
       <div class="py-5">
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-8">
-              <h1 class=" font-roboto-condensed color-2 mb-5">Get In Touch</h1>
+              <h1 class=" font-roboto-condensed color-2 mb-5 fw-bold">Get In Touch</h1>
               <form action="">
                 <div class="row">
                   <div class="col-12 col-lg-6">
@@ -220,7 +219,7 @@
               </form>
             </div>
             <div class="col-12 col-lg-4">
-
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.2695291676205!2d125.60048657418622!3d7.094725216263494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d239e0b8d8d%3A0x6803118d251c27d5!2sR%20Web%20Solutions%20Corp.%20Davao!5e0!3m2!1sen!2sph!4v1685882153379!5m2!1sen!2sph" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
