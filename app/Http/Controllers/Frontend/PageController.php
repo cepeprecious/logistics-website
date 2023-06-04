@@ -27,6 +27,10 @@ class PageController extends Controller
         return view('frontend.pages.blogs');
     }
 
+    public function blogsSingle(Request $request) {
+        return view('frontend.pages.blogs-single');
+    }
+
     public function contactUs(Request $request) {
         return view('frontend.pages.contact-us');
     }

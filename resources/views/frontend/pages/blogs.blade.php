@@ -27,7 +27,7 @@
                   ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
                   viverra maecenas accumsan lacus vel facilisis.
                 </p>
-                <a class="btn px-0 mt-2 color-1 fw-bold font-rubik" href=""><i class="fa-solid fa-arrow-right me-1"></i> Read More</a>
+                <a class="btn px-0 mt-2 color-1 fw-bold font-rubik" href="{{ url('blogs-single') }}"><i class="fa-solid fa-arrow-right me-1"></i> Read More</a>
               </div>
             </div>
             <div class="d-flex flex-column flex-md-row mb-5">
@@ -39,7 +39,7 @@
                   ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
                   viverra maecenas accumsan lacus vel facilisis.
                 </p>
-                <a class="btn px-0 mt-2 color-1 fw-bold font-rubik" href=""><i class="fa-solid fa-arrow-right me-1"></i> Read More</a>
+                <a class="btn px-0 mt-2 color-1 fw-bold font-rubik" href="{{ url('blogs-single') }}"><i class="fa-solid fa-arrow-right me-1"></i> Read More</a>
               </div>
               <img src="{{ asset('assets/frontend/img/blog img 1.png') }}" alt="" class="order-1 order-md-2">
             </div>
@@ -53,7 +53,7 @@
                   ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
                   viverra maecenas accumsan lacus vel facilisis.
                 </p>
-                <a class="btn px-0 mt-2 color-1 fw-bold font-rubik" href=""><i class="fa-solid fa-arrow-right me-1"></i> Read More</a>
+                <a class="btn px-0 mt-2 color-1 fw-bold font-rubik" href="{{ url('blogs-single') }}"><i class="fa-solid fa-arrow-right me-1"></i> Read More</a>
               </div>
             </div>
             <div class="d-flex flex-column flex-md-row mb-5">
@@ -65,7 +65,7 @@
                   ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
                   viverra maecenas accumsan lacus vel facilisis.
                 </p>
-                <a class="btn px-0 mt-2 color-1 fw-bold font-rubik" href=""><i class="fa-solid fa-arrow-right me-1"></i> Read More</a>
+                <a class="btn px-0 mt-2 color-1 fw-bold font-rubik" href="{{ url('blogs-single') }}"><i class="fa-solid fa-arrow-right me-1"></i> Read More</a>
               </div>
               <img src="{{ asset('assets/frontend/img/blog img 1.png') }}" alt="" class="order-1 order-md-2">
             </div>

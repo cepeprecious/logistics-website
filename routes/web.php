@@ -21,5 +21,6 @@ Route::controller(FrontendController\PageController::class)->group(function() {
     Route::get('/our-services', 'ourServices')->name('our-services');
     Route::get('/faqs', 'faqs')->name('faqs');
     Route::get('/blogs', 'blogs')->name('blogs');
+    Route::get('/blogs-single', 'blogsSingle')->name('blogs-single');
     Route::get('/contact-us', 'contactUs')->name('contact-us');
 });
