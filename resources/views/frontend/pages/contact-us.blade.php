@@ -15,7 +15,7 @@
 
     <section class="section-1 mt-5">
       <div class="container">
-        <div class="d-flex flex-column flex-lg-row justify-content-around align-items-center border py-3 text-white" style="background-color: var(--color-2)">
+        <div class="d-flex flex-column flex-lg-row justify-content-around align-items-center border py-4 text-white" style="background-color: var(--color-2)">
           <p class="m-0 font-rubik"><i class="fa-solid fa-house me-2 color-1"></i> 244 Ventura Blvd., Los Angeles, USA</p>
           <p class="m-0 font-rubik"><i class="fa-solid fa-phone me-2 color-1"></i></i> (+24) 1344 205 6999</p>
           <p class="m-0 font-rubik"><i class="fa-solid fa-envelope me-2 color-1"></i></i></i> sampleemail@gmail.com</p>
@@ -25,7 +25,45 @@
     </section>
 
     <section class="section-2">
+      <div class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class=" font-roboto-condensed fw-bold color-2 mb-5">Send us a Message</h1>
+              <form action="">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="mb-5">
+                      <input type="text" class="form-control border-0 rounded-0 shadow-1 p-4" name="name" id="name" placeholder="Name">
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="mb-5">
+                      <input type="text" class="form-control border-0 rounded-0 shadow-1 p-4" name="phonenum" id="phonenum" placeholder="Phone No.">
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="mb-5">
+                      <input type="email" class="form-control border-0 rounded-0 shadow-1 p-4" name="email" id="email" placeholder="Email Address">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="mb-5">
+                      <textarea class="form-control border-0 rounded-0 shadow-1 p-4" name="message" id="message" rows="3" placeholder="Message"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-1 btn-border-left">SUBMIT</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-lg-4">
 
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </section>
 @endsection
