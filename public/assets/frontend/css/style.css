@@ -137,6 +137,7 @@ a {
 header {
   transition: 0.5s;
   padding-top: 6rem;
+  z-index: 100;
 }
 
 header .navbar-nav {
@@ -165,15 +166,20 @@ header.on-scroll .navbar-brand {
   font-size: 50px;
 }
 
+/* Banner Style */
 .banner .banner-img {
   min-height: 500px;
   object-fit: cover;
-  object-position: center;
+  object-position: top center;
 }
 
 .banner .banner-text {
   position: absolute;
   top: 50%;
+}
+
+.banner .height-200px {
+  max-height: 200px;
 }
 
 

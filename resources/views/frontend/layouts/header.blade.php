@@ -1,4 +1,4 @@
-<header class="position-fixed top-0 z-3 w-100">
+<header class="position-fixed top-0 w-100">
   <div class="container">
     <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
       <a class="navbar-brand" href="{{ url('') }}">LOGO</a>
