@@ -231,6 +231,7 @@
 @endsection
 
 @section('style')
+  <link rel="stylesheet" href="{{ asset('assets/frontend/css/home.css') }}">
   <style>
     .section-2 .background-image {
       background-image: url("{{ asset('assets/frontend/img/globus_image.png') }}");

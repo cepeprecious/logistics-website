@@ -1,0 +1,34 @@
+.faqs .accordion-header button {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.faqs .accordion-item {
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid var(--color-2);
+}
+
+.faqs .accordion-button {
+  box-shadow: none;
+  background-color: unset;
+  color: unset;
+  font-family: 'Rubik', sans-serif;
+  color: var(--color-2);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.faqs .accordion-button::after {
+  transform: rotate(-90deg);
+}
+
+.faqs .accordion-button:not(.collapsed)::after {
+  transform: rotate(0deg) !important;
+}
+
+.faqs .accordion-body {
+  font-family: 'Rubik', sans-serif;
+  color: var(--color-2);
+  font-weight: 500;
+}

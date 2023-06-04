@@ -1,0 +1,155 @@
+.home {
+  position: relative;
+}
+
+.home .banner .banner-img {
+  min-height: 700px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home .section-1 .item {
+  background-color: white;
+  max-width: 700px;
+  padding: 3rem;
+}
+
+.home .section-2 .background-image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 20vw;
+  padding-block: 8vw;
+}
+
+.home .section-2 .text-box {
+  background-color: white;
+  padding: 1rem;
+}
+
+.home .section-2 .blue-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--color-2);
+  padding: 1rem;
+}
+
+.home .section-2 .blue-text-box>* {
+  margin: 0;
+}
+
+.home .section-2 .blue-text-box .large {
+  font-size: 70px;
+  line-height: 3.8rem;
+  margin-bottom: -10px;
+}
+
+.home .section-2 .blue-text-box :last-child {
+  background-color: white;
+  color: var(--color-1);
+  padding: 0.5rem 1.5rem;
+  font-size: 12px;
+}
+
+.home .section-2 .text-box .row .fa-solid {
+  font-size: 8px;
+  color: green;
+  margin-right: 1rem;
+}
+
+.home .section-2 .text-box .row .col {
+  display: flex;
+  align-items: center;
+}
+
+.home .section-2 .text-box h6,
+.home .section-2 .text-box p,
+.home .section-2 .text-box span {
+  line-height: 2rem;
+}
+
+.home .section-3 .background-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home .section-4 .fs-large {
+  font-size: 60px;
+}
+
+.home .section-4 .item {
+  max-width: 400px;
+}
+
+.home .section-4 .item img {
+  max-height: 320px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home .section-4 .item .body {
+  padding: 2rem;
+}
+
+@media screen and (min-width: 767px) {
+  .home .section-1 {
+    position: relative;
+    margin-top: -100px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+
+  .home .section-2 .text-box h6,
+  .home .section-2 .text-box p,
+  .home .section-2 .text-box span {
+    line-height: 1.2rem;
+  }
+
+  .home .section-1 .item {
+    max-width: 400px;
+  }
+
+  .home .section-2 .text-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 63%;
+    height: 80%;
+    padding-right: 10%;
+    padding-top: 5%;
+  }
+
+  .home .section-2 .blue-text-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 30%;
+    border-bottom-left-radius: 1rem;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+
+  .home .section-2 .text-box h6,
+  .home .section-2 .text-box p,
+  .home .section-2 .text-box span {
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1399px) {
+  .home .section-2 .text-box .row .col {
+    padding-block: 8px;
+  }
+
+  .home .section-2 .text-box h6,
+  .home .section-2 .text-box p,
+  .home .section-2 .text-box span {
+    line-height: 2rem;
+  }
+}
