@@ -178,6 +178,7 @@ header.on-scroll .navbar-brand {
   top: 50%;
 }
 
-.banner .height-200px {
-  max-height: 200px;
+.banner .height-350px {
+  min-height: 350px;
+  max-height: 350px;
 }

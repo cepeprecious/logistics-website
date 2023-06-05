@@ -4,12 +4,12 @@
   <section class="blogs">
     <section class="banner">
       <div class="position-relative">
-        <img src="{{ asset('assets/frontend/img/other pages banner.png') }}" alt="" class="banner-img img-fluid w-100">
-        <div class="banner-text w-100 text-white">
+        <img src="{{ asset('assets/frontend/img/other pages banner.png') }}" alt="" class="banner-img img-fluid w-100 height-350px">
+        {{-- <div class="banner-text w-100 text-white">
           <div class="container">
             <h1 class="fw-medium ps-lg-5">BLOGS</h1>
           </div>
-        </div>
+        </div> --}}
       </div>
     </section>
 
@@ -141,7 +141,7 @@
 @endsection
 
 @section('style')
-<link rel="stylesheet" href="{{ asset('assets/frontend/css/blogs.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/frontend/css/blogs.css') }}">
 @endsection
 
 @section('script')
