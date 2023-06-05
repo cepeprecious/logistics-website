@@ -13,7 +13,7 @@
       </div>
     </section>
 
-    <section class="section-1 mt-5">
+    <section class="section-1 my-5">
       <div class="container">
         <h1 class="text-center color-2 mb-4">FAQs</h1>
         <div class="row">

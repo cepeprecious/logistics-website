@@ -17,8 +17,27 @@
 
     </section>
 
-    <section class="section-2">
-
+    <section class="section-2 py-5" style="background-image: url('{{ asset('assets/frontend/img/globus_image.png') }}'); background-repeat: no-repeat; background-position: right; background-size: contain;">
+      <div class="background-image">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="text-white py-5 ps-4" style="background-color: var(--color-2); height: 450px">
+                <h1 class="mb-4">Why Choose Us?</h1>
+                <p class="fs-3 text-justify m-0" style="padding-right: 100px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusamus quo 
+                  impedit sequi perferendis eaque ullam perspiciatis aliquid quod. Quidem aliquid incidunt, 
+                  amet adipisci facilis nesciunt quam sapiente iste consequuntur!
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div style="margin-left: -100px; margin-top: 180px">
+                <img src="{{ asset('assets/frontend/img/img 2.jpg') }}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section-3 facts my-5 py-5">
@@ -128,6 +147,7 @@
 @endsection
 
 @section('style')
+<link rel="stylesheet" href="{{ asset('assets/frontend/css/about.css') }}">
 <style>
   .section-3 {
     background-color: var(--color-2)

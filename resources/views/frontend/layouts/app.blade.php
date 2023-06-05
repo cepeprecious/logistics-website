@@ -13,7 +13,9 @@
   @yield('style')
 </head>
 
-<body style="min-height: 5000px;">
+{{-- style="min-height: 5000px;" --}}
+
+<body>
   @include('frontend.layouts.offcanvas')
   @include('frontend.layouts.header')
   @yield('content')
