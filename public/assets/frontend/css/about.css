@@ -1,0 +1,119 @@
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.section-2 ul {
+  list-style: none; /* Hide the default bullet points */
+  padding: 0px;
+  line-height: 2.5;
+}
+
+.section-2 ul li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-1);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.section-3 {
+  background-color: var(--color-2)
+}
+
+/*** Team ***/
+.team-item .team-img::before,
+.team-item .team-img::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(1, 10, 53, 0.377);
+  transition: .5s;
+}
+
+.team-item .team-img::after {
+  left: auto;
+  right: 0;
+}
+
+.team-item:hover .team-img::before,
+.team-item:hover .team-img::after {
+  width: 50%;
+}
+
+.team-item .team-img .team-social {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
+  z-index: 3;
+  opacity: 0;
+}
+
+.team-item:hover .team-img .team-social {
+  transition-delay: .3s;
+  opacity: 1;
+}
+
+.team-item .team-img .team-social i {
+  color: white;
+  font-size: 20px
+}
+
+.team-item .team-img .team-social .fa-facebook-f:hover {
+  color: #3b5998;
+}
+
+.team-item .team-img .team-social .fa-google-plus-g:hover {
+  color: #dd4b39;
+}
+
+.team-item .team-img .team-social .fa-twitter:hover {
+  color: #1dcaff;
+}
+
+.team-item .team-img .team-social .fa-behance:hover {
+  color: #1769FF;
+}
+
+.team-item .team-img .team-social .fa-instagram:hover {
+  color: #E1306C;
+}
+
+.our-partners .tns-outer [data-action='stop'],
+.our-partners .tns-outer [data-action='start'] {
+  display: none;
+}
+
+.our-partners .slider-item {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.our-partners .tns-outer .tns-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.our-partners .tns-outer .tns-controls button {
+  background-color: white;
+  border: none;
+  border-radius: 100%;
+  height: 40px;
+  padding: 10px;
+  color: var(--color-1);
+}
+
+.our-partners .tns-outer .tns-controls button:hover {
+  color: white;
+  outline: #dd4b39
+}

@@ -38,4 +38,12 @@ class PageController extends Controller
     public function trackPackage(Request $request) {
         return view('frontend.pages.track');
     }
+
+    public function login(Request $request) {
+        return view('frontend.pages.login');
+    }
+
+    public function register(Request $request) {
+        return view('frontend.pages.register');
+    }
 }

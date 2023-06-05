@@ -34,3 +34,6 @@
 <a href="{{ route('track') }}" class="btn btn-1 fs-14px">
   {{ __('TRACK YOUR PARCEL') }}
 </a>
+<a href="{{ route('login') }}" class="btn btn-1 fs-14px">
+  {{ __('LOGIN') }}
+</a>

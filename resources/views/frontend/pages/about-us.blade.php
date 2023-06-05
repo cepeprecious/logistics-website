@@ -17,6 +17,42 @@
 
     </section>
 
+    <!-- ======= About Section ======= -->
+    <section id="about" class="section-2 about my-5">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6">
+            <img src="{{ asset('assets/frontend/img/young-man-working-warehouse-with-boxes.jpg') }}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-5 pt-5 pt-lg-0 ps-2 ps-lg-5">
+            <h6 class="color-1">ABOUT US</h6>
+            <h1 class="color-2 fw-bold">The Experts in Delivery</h1>
+            <p class="color-2 fs-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul class="fs-6">
+                  <li>Tempor incididunt Amet!</li>
+                  <li>Tempor incididunt Amet!</li>
+                  <li>Tempor incididunt Amet!</li>
+                  <li>Tempor incididunt Amet!</li>
+                  <li>Tempor incididunt Amet!</li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="fs-6">
+                  <li>Tempor incididunt Amet!</li>
+                  <li>Tempor incididunt Amet!</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
     <section class="section-2 py-5" style="background-image: url('{{ asset('assets/frontend/img/globus_image.png') }}'); background-repeat: no-repeat; background-position: right; background-size: contain;">
       <div class="background-image">
         <div class="container">
@@ -24,7 +60,7 @@
             <div class="col-lg-6">
               <div class="text-white py-5 ps-4" style="background-color: var(--color-2); height: 450px">
                 <h1 class="mb-4">Why Choose Us?</h1>
-                <p class="fs-3 text-justify m-0" style="padding-right: 100px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusamus quo 
+                <p class="fs-3 text-justify m-0" style="padding-right: 110px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusamus quo 
                   impedit sequi perferendis eaque ullam perspiciatis aliquid quod. Quidem aliquid incidunt, 
                   amet adipisci facilis nesciunt quam sapiente iste consequuntur!
                 </p>
@@ -63,7 +99,7 @@
       </div>
     </section>
 
-    <section class="section-4 py-5">
+    <section class="section-4" style="margin: 100px 0px">
       <div class="container">
         <h1 class="text-center color-2 mb-5 fw-bold">Our Team</h1>
         <div class="row g-4">
@@ -142,85 +178,73 @@
         </div>
       </div>
     </section>
-  <!-- Team End -->
+
+    {{-- <section class="section-5">
+      <div class="container">
+        <h1 class="text-center color-2 mb-5 fw-bold">Our Partners</h1>
+        <div>
+
+        </div>
+      </div>
+    </section> --}}
+
+    <div class="our-partners container-fluid my-5">
+      <div class="container pb-5 mb-5">
+        <h1 class="text-center color-2 mb-5 fw-bold">Our Partners</h1>
+        <div class="bg-white">
+          <div class="d-flex justify-content-center slider">
+            <img src="{{ asset('assets/frontend/img/coffee-logo.png') }}" alt="">
+            <img src="{{ asset('assets/frontend/img/coffee-logo.png') }}" alt="">
+            <img src="{{ asset('assets/frontend/img/coffee-logo.png') }}" alt="">
+            <img src="{{ asset('assets/frontend/img/coffee-logo.png') }}" alt="">
+            <img src="{{ asset('assets/frontend/img/coffee-logo.png') }}" alt="">
+            <img src="{{ asset('assets/frontend/img/coffee-logo.png') }}" alt="">
+            <img src="{{ asset('assets/frontend/img/coffee-logo.png') }}" alt="">
+            <img src="{{ asset('assets/frontend/img/coffee-logo.png') }}" alt="">
+            <img src="{{ asset('assets/frontend/img/coffee-logo.png') }}" alt="">
+            <img src="{{ asset('assets/frontend/img/coffee-logo.png') }}" alt="">
+            <img src="{{ asset('assets/frontend/img/coffee-logo.png') }}" alt="">
+            <img src="{{ asset('assets/frontend/img/coffee-logo.png') }}" alt="">
+            <img src="{{ asset('assets/frontend/img/coffee-logo.png') }}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 @endsection
 
 @section('style')
 <link rel="stylesheet" href="{{ asset('assets/frontend/css/about.css') }}">
-<style>
-  .section-3 {
-    background-color: var(--color-2)
-  }
-
-  /*** Team ***/
-  .team-item .team-img::before,
-  .team-item .team-img::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(1, 10, 53, 0.377);
-    transition: .5s;
-  }
-
-  .team-item .team-img::after {
-    left: auto;
-    right: 0;
-  }
-
-  .team-item:hover .team-img::before,
-  .team-item:hover .team-img::after {
-    width: 50%;
-  }
-
-  .team-item .team-img .team-social {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .5s;
-    z-index: 3;
-    opacity: 0;
-  }
-
-  .team-item:hover .team-img .team-social {
-    transition-delay: .3s;
-    opacity: 1;
-  }
-
-  .team-item .team-img .team-social i {
-    color: white;
-    font-size: 20px
-  }
-
-  .team-item .team-img .team-social .fa-facebook-f:hover {
-    color: #3b5998;
-  }
-
-  .team-item .team-img .team-social .fa-google-plus-g:hover {
-    color: #dd4b39;
-  }
-
-  .team-item .team-img .team-social .fa-twitter:hover {
-    color: #1dcaff;
-  }
-
-  .team-item .team-img .team-social .fa-behance:hover {
-    color: #1769FF;
-  }
-
-  .team-item .team-img .team-social .fa-instagram:hover {
-    color: #E1306C;
-  }
-</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 @endsection
 
 @section('script')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script>
+  $(document).ready(function() {
+    var slider = tns({
+      container: '.slider',
+      items: 1,
+      slideBy: 1,
+      autoplay: true,
+      controlsPosition: 'bottom',
+      nav: false,
+      controlsText: [
+        '<i class="fa-solid fa-chevron-left fa-2xl"></i>',
+        '<i class="fa-solid fa-chevron-right fa-2xl"></i>'
+      ],
+      responsive: {
+        565: {
+          items: 1
+        },
+        767: {
+          items: 2
+        },
+        991: {
+          items: 4
+        }
+      },
+    });
+  });
+</script>
 @endsection
