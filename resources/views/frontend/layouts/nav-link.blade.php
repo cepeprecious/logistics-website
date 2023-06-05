@@ -31,6 +31,6 @@
   </li>
 </ul>
 <hr class="d-block d-lg-none">
-<a href="" class="btn btn-1 fs-14px">
+<a href="{{ route('track') }}" class="btn btn-1 fs-14px">
   {{ __('TRACK YOUR PARCEL') }}
 </a>
