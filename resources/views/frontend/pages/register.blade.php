@@ -13,13 +13,13 @@
         <h1 class="mb-4">Register</h1>
         <form action="" method="POST">
           <div class="mb-3">
-            <label for="firstName" class="form-label fs-5">First Name</label>
-            <input type="text" class="form-control form-control-lg rounded-0" id="firstName" name="firstName" placeholder="Enter your first name" required>
+            <label for="name" class="form-label fs-5">Name</label>
+            <input type="text" class="form-control form-control-lg rounded-0" id="name" name="name" placeholder="Enter your name" required>
           </div>
           <div class="mb-3">
-            <label for="lastName" class="form-label fs-5">Last Name</label>
-            <input type="text" class="form-control form-control-lg rounded-0" id="lastName" name="lastName" placeholder="Enter your last name" required>
-          </div>
+            <label for="email" class="form-label fs-5">Email Address</label>
+            <input type="email" class="form-control form-control-lg rounded-0" id="email" name="email" placeholder="Enter your email address" required>
+          </div>          
           <div class="mb-3">
             <label for="username" class="form-label fs-5">Username</label>
             <input type="text" class="form-control form-control-lg rounded-0" id="username" name="username" placeholder="Enter your username" required>
