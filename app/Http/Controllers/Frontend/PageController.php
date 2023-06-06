@@ -46,4 +46,8 @@ class PageController extends Controller
     public function register(Request $request) {
         return view('frontend.pages.register');
     }
+
+    public function dashboard(Request $request) {
+        return view('frontend.pages.user.dashboard');
+    }
 }
