@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>{{ config('app.name', 'Laravel') }} {{ __('| CMS') }}</title>
+  <title>{{ config('app.name', 'Laravel') }} {{ __('| Customer') }}</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -167,9 +167,9 @@
             <i class="fas fa-power-off"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-            <form class="m-0" method="POST" action="{{ url('admin/logout') }}">
+            <form class="m-0" method="POST" action="{{ url('logout') }}">
               @csrf
-              <a class="btn btn-dark w-100" href="{{ url('admin/logout') }}" onclick="event.preventDefault();this.closest('form').submit();">
+              <a class="btn btn-dark w-100" href="{{ url('logout') }}" onclick="event.preventDefault();this.closest('form').submit();">
                 <i class="fas fa-power-off mr-3"></i>Logout
               </a>
             </form>
@@ -200,7 +200,7 @@
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
             <li class="nav-item">
-              <a href="{{ url('admin/dashboard') }}" class="nav-link {{ Request::is('admin/dashboard') ? 'active' : '' }}">
+              <a href="{{ url('dashboard') }}" class="nav-link {{ Request::is('dashboard') ? 'active' : '' }}">
                 <i class="nav-icon fas fa-home"></i>
                 <p>
                   Dashboard
@@ -209,24 +209,65 @@
               </a>
             </li>
 
-            <li class="nav-item {{ Request::is('admin/inquiry') ? 'menu-open' : '' }}">
-              <a href="#" class="nav-link {{ Request::is('admin/inquiry') ? 'active' : '' }}">
-                <i class="nav-icon fas fa-folder"></i>
+            <li class="nav-item">
+              <a href="{{ url('create-order') }}" class="nav-link {{ Request::is('create-order') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-home"></i>
                 <p>
-                  CMS
-                  <i class="right fas fa-angle-left"></i>
+                  Create Order
+                  {{-- <span class="right badge badge-danger">New</span> --}}
                 </p>
               </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="{{ url('admin/inquiry') }}" class="nav-link {{ Request::is('admin/inquiry') ? 'active' : '' }}">
-                    <i class="nav-icon far fa-file"></i>
-                    <p>Inquiries</p>
-                  </a>
-                </li>
-              </ul>
             </li>
-            {{-- Add more nav-item here --}}
+
+            <li class="nav-item">
+              <a href="{{ url('order-status') }}" class="nav-link {{ Request::is('order-status') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-home"></i>
+                <p>
+                  Order Status
+                  {{-- <span class="right badge badge-danger">New</span> --}}
+                </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="{{ url('shipment-tracking') }}" class="nav-link {{ Request::is('shipment-tracking') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-home"></i>
+                <p>
+                  Shipment Tracking
+                  {{-- <span class="right badge badge-danger">New</span> --}}
+                </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="{{ url('order-history') }}" class="nav-link {{ Request::is('order-history') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-home"></i>
+                <p>
+                  Order History
+                  {{-- <span class="right badge badge-danger">New</span> --}}
+                </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="{{ url('address-book') }}" class="nav-link {{ Request::is('address-book') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-home"></i>
+                <p>
+                  Address Book
+                  {{-- <span class="right badge badge-danger">New</span> --}}
+                </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="{{ url('personal-profile') }}" class="nav-link {{ Request::is('personal-profile') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-home"></i>
+                <p>
+                  Personal Profile
+                  {{-- <span class="right badge badge-danger">New</span> --}}
+                </p>
+              </a>
+            </li>
 
           </ul>
         </nav>

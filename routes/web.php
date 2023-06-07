@@ -37,9 +37,17 @@ Route::controller(FrontendController\AuthController::class)->group(function() {
 
 Route::middleware(['user-access:user'])->group(function() {
     Route::post('logout', [ FrontendController\AuthController::class, 'logout' ]);
-    Route::controller(FrontendController\PageController::class)->group(function() {
-        Route::get('dashboard', 'dashboard')->name('dashboard');
+
+    Route::controller(FrontendController\CustomerController::class)->group(function() {
+        Route::get('dashboard', 'dashboard');
+        Route::get('create-order', 'createOrder');
+        Route::get('order-status', 'orderStatus');
+        Route::get('shipment-tracking', 'shipmentTracking');
+        Route::get('order-history', 'orderHistory');
+        Route::get('address-book', 'addressBook');
+        Route::get('personal-profile', 'personalProfile');
     });
+
 });
 
 Route::prefix('admin')->group(function() {
@@ -48,6 +56,7 @@ Route::prefix('admin')->group(function() {
 
     Route::middleware(['user-access:admin'])->group(function() {
         Route::post('logout', [ BackendController\AuthController::class, 'logout' ]);
+        
         Route::resource('dashboard', BackendController\DashboardController::class);
         Route::resource('inquiry', BackendController\InquiryController::class);
         Route::get('inquiry-export', [ BackendController\InquiryController::class, 'export' ]);

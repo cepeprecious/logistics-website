@@ -8,48 +8,44 @@ use App\Models\Inquiry;
 
 class PageController extends Controller
 {
-    public function home(Request $request) {
+    public function home() {
         return view('frontend.pages.home');
     }
 
-    public function aboutUs(Request $request) {
+    public function aboutUs() {
         return view('frontend.pages.about-us');
     }
 
-    public function ourServices(Request $request) {
+    public function ourServices() {
         return view('frontend.pages.our-services');
     }
 
-    public function faqs(Request $request) {
+    public function faqs() {
         return view('frontend.pages.faqs');
     }
 
-    public function blogs(Request $request) {
+    public function blogs() {
         return view('frontend.pages.blogs');
     }
 
-    public function blogsSingle(Request $request) {
+    public function blogsSingle() {
         return view('frontend.pages.blogs-single');
     }
 
-    public function contactUs(Request $request) {
+    public function contactUs() {
         return view('frontend.pages.contact-us');
     }
 
-    public function trackPackage(Request $request) {
+    public function trackPackage() {
         return view('frontend.pages.track');
     }
 
-    public function login(Request $request) {
+    public function login() {
         return view('frontend.pages.login');
     }
 
-    public function register(Request $request) {
+    public function register() {
         return view('frontend.pages.register');
-    }
-
-    public function dashboard(Request $request) {
-        return view('frontend.pages.user.dashboard');
     }
 
     public function inquiry(Request $request) {
