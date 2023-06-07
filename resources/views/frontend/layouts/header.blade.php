@@ -8,7 +8,7 @@
       <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
         <i class="fa-solid fa-bars text-white"></i>
       </button>
-      <div class="collapse navbar-collapse gap-5" id="collapsibleNavId">
+      <div class="collapse navbar-collapse gap-2" id="collapsibleNavId">
         @include('frontend.layouts.nav-link')
       </div>
     </nav>

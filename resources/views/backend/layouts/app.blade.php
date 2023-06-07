@@ -27,10 +27,33 @@
   <link rel="stylesheet" href="{{ asset('assets/admin/plugins/daterangepicker/daterangepicker.css') }}">
   <!-- summernote -->
   <link rel="stylesheet" href="{{ asset('assets/admin/plugins/summernote/summernote-bs4.min.css') }}">
+  <!-- jQuery DataTables -->
+  <link rel="stylesheet" href="{{ asset('assets/admin/plugins/jqueryDataTables/css/jquery.dataTables.css') }}">
+
+  <style>
+    .action-width {
+      width: 120px;
+      vertical-align: middle !important;
+      text-align: right;
+    }
+
+    th {
+      vertical-align: middle !important;
+    }
+
+    .btn.btn-width {
+      width: 100px;
+      max-width: 100px;
+    }
+
+    .nav-link {
+      height: unset !important;
+    }
+  </style>
   @yield('style')
 </head>
 
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini text-sm">
   <div class="wrapper">
 
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -168,7 +191,7 @@
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
             <li class="nav-item">
-              <a href="pages/widgets.html" class="nav-link active">
+              <a href="{{ url('admin/dashboard') }}" class="nav-link active">
                 <i class="nav-icon fas fa-home"></i>
                 <p>
                   Dashboard
@@ -187,7 +210,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="./index.html" class="nav-link">
+                  <a href="{{ url('admin/inquiry') }}" class="nav-link">
                     <i class="nav-icon far fa-file"></i>
                     <p>Inquiries</p>
                   </a>
@@ -204,28 +227,6 @@
     <div class="content-wrapper">
 
       @yield('content')
-
-      <div class="content-header">
-        <div class="container-fluid">
-          <div class="row mb-2">
-            <div class="col-sm-6">
-              <h1 class="m-0">Dashboard</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="content">
-        <div class="container-fluid">
-          <div class="row">
-
-            <div class="col-lg-6">
-
-            </div>
-
-          </div>
-        </div>
-      </div>
 
     </div>
 
@@ -269,6 +270,8 @@
 <script src="{{ asset('assets/admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
 <!-- AdminLTE App -->
 <script src="{{ asset('assets/admin/js/adminlte.min.js') }}"></script>
+<!-- jQuery DataTables -->
+<script src="{{ asset('assets/admin/plugins/datatables/jquery.dataTables.js') }}"></script>
 @yield('script')
 
 </html>

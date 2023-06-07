@@ -19,10 +19,25 @@ class UserAccess
     {
         if(Auth::check()) {
             if (auth()->user()->role != $userType) {
-                return abort(401);
+                if ($userType === 'admin') {
+                    return redirect('admin/login');
+                }
+        
+                if ($userType === 'user') {
+                    return redirect('login');
+                }
             }
+            return $next($request);
         }
 
-        return $next($request);
+        if ($userType === 'admin') {
+            return redirect('admin/login');
+        }
+
+        if ($userType === 'user') {
+            return redirect('login');
+        }
+
+        return abort(401);
     }
 }
