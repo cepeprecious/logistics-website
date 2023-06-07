@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Inquiry;
 
 class PageController extends Controller
 {
@@ -49,5 +50,22 @@ class PageController extends Controller
 
     public function dashboard(Request $request) {
         return view('frontend.pages.user.dashboard');
+    }
+
+    public function inquiry(Request $request) {
+        $validatedData = $request->validate([
+            'name' => 'required',
+            'email_address' => 'required|email',
+            'message' => 'required|min:10',
+        ]);
+
+        Inquiry::create([
+            'name' => $validatedData['name'],
+            'phone_number' => $request['phone_number'],
+            'email_address' => $validatedData['email_address'],
+            'message' => $validatedData['message'],
+        ]);
+
+        return response()->json(['success' => 'Sent message successfully']);
     }
 }

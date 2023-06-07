@@ -26,6 +26,7 @@ Route::controller(FrontendController\PageController::class)->group(function() {
     Route::get('contact-us', 'contactUs')->name('contact-us');
     Route::get('track', 'trackPackage')->name('track');
     Route::get('register', 'register')->name('register');
+    Route::post('inquiry', 'inquiry')->name('inquiry');
 });
 
 Route::controller(FrontendController\AuthController::class)->group(function() {
