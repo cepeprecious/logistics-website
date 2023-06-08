@@ -56,10 +56,22 @@ Route::prefix('admin')->group(function() {
 
     Route::middleware(['user-access:admin'])->group(function() {
         Route::post('logout', [ BackendController\AuthController::class, 'logout' ]);
+
+        Route::controller(BackendController\AdminController::class)->group(function() {
+            Route::get('dashboard', 'dashboard');
+            Route::get('order-management', 'orderManagement');
+            Route::get('customer-management', 'customerManagement');
+            Route::get('drive-and-delivery-personnel-management', 'driveAndDeliveryPersonnelManagement');
+            Route::get('settings-and-configuration', 'settingsAndConfiguration');
+
+            Route::get('inquiry', 'inquiry');
+            Route::delete('inquiry/{id}', 'inquiryDelete');
+            Route::get('inquiry/export', 'inquiryExport');
+
+            Route::get('trash/inquiry', 'trashInquiry');
+            Route::post('trash/inquiry/retrieve', 'inquiryRetrieve');
+        });
         
-        Route::resource('dashboard', BackendController\DashboardController::class);
-        Route::resource('inquiry', BackendController\InquiryController::class);
-        Route::get('inquiry-export', [ BackendController\InquiryController::class, 'export' ]);
     });
 
 });

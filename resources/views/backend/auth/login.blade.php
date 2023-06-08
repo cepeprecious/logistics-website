@@ -16,39 +16,40 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('assets/admin/css/adminlte.min.css') }}">
 
+  <style>
+    body {
+      background-image: url("{{ url('assets/frontend/img/img 1.jpg') }}");
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
 </head>
 
 <body class="hold-transition login-page">
   <div class="login-box">
-    <div class="login-logo">
+
+    <div class="login-logo bg-white rounded">
       <a href="{{ url('admin/login') }}">ADMIN PANEL</a>
     </div>
-    <!-- /.login-logo -->
+
     <div class="card">
-      @if (Session::has('success'))
-        <div class="alert alert-success alert-dismissible">
-          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-          <h5><i class="icon fas fa-check"></i> Success!</h5>
-          {{ Session::get('success') }}
-        </div>
-      @endif
-      @if (Session::has('error'))
-        <div class="alert alert-danger alert-dismissible">
-          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-          <h5><i class="icon fas fa-times"></i> Error!</h5>
-          {{ Session::get('error') }}
-        </div>
-      @endif
-      <div class="card-body login-card-body">
+      <div class="card-body login-card-body rounded">
+
         <p class="login-box-msg">Sign in to start your session</p>
+
+        @if (Session::has('error'))
+          <span class="text-danger d-block mb-3">
+            {{ Session::get('error') }}
+          </span>
+        @endif
 
         <form action="{{ url('admin/login') }}" method="POST">
           @csrf
           <div class="input-group">
-            <input type="username" class="form-control" placeholder="Username" required name="username" value="Admin2">
+            <input type="username" class="form-control" placeholder="Username" required name="username" value="Admin">
             <div class="input-group-append">
               <div class="input-group-text">
-                <span class="fas fa-envelope"></span>
+                <span class="fas fa-user"></span>
               </div>
             </div>
           </div>
@@ -78,11 +79,22 @@
         </form>
 
       </div>
-      <!-- /.login-card-body -->
     </div>
+
   </div>
-  <!-- /.login-box -->
-  <script src="{{ asset('js/admin.js') }}"></script>
 </body>
+
+<!-- jQuery -->
+<script src="{{ asset('assets/admin/plugins/jquery/jquery.min.js') }}"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="{{ asset('assets/admin/plugins/jquery-ui/jquery-ui.min.js') }}"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="{{ asset('assets/admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<!-- AdminLTE App -->
+<script src="{{ asset('assets/admin/js/adminlte.min.js') }}"></script>
 
 </html>
