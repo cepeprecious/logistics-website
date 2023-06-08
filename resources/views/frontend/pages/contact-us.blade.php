@@ -27,7 +27,7 @@
     <section class="section-2">
       <div class="py-5">
         <div class="container">
-          <h1 class=" font-roboto-condensed fw-bold color-2 mb-5">Send us a Message</h1>
+          <h1 class="font-roboto-condensed fw-bold color-2 mb-5">Send us a Message</h1>
           <form id="inquiry" method="POST" action="{{ route('inquiry') }}">
             <div class="row">
               <div class="col-12">

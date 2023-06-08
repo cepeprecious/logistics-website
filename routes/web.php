@@ -46,6 +46,7 @@ Route::middleware(['user-access:user'])->group(function() {
         Route::get('order-history', 'orderHistory');
         Route::get('address-book', 'addressBook');
         Route::get('personal-profile', 'personalProfile');
+        Route::post('order-submit', 'order');
     });
 
 });
@@ -73,5 +74,4 @@ Route::prefix('admin')->group(function() {
         });
         
     });
-
 });

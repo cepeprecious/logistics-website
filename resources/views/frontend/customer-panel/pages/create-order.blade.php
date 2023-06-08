@@ -14,7 +14,8 @@
 
   <div class="content">
     <div class="container-fluid">
-      <form action="" method="POST">
+      <form action="{{ url('order-submit') }}" method="POST">
+        @csrf
         <div class="card card-default">
           <div class="card-header">
             <h3 class="card-title">Receiver's Shipping Address</h3>
@@ -33,37 +34,37 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label>Full Name <span style="color: red">*</span></label>
-                  <input type="text" class="form-control" id="full-name" name="full-name" placeholder="Enter ..." required>
+                  <input type="text" class="form-control" id="receiver-name" name="receiver-name" placeholder="Enter ..." required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label>Phone Number <span style="color: red">*</span></label>
-                  <input type="text" class="form-control" id="phone-number" name="phone-number" placeholder="Enter ..." required>
+                  <input type="text" class="form-control" id="receiver-number" name="receiver-number" placeholder="Enter ..." required>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="form-group">
                   <label>Address (Street Name, Building, House No., Barangay) <span style="color: red">*</span></label>
-                  <input type="text" class="form-control" id="address" name="address" placeholder="Enter ..." required>
+                  <input type="text" class="form-control" id="receiver-address" name="receiver-address" placeholder="Enter ..." required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label>City <span style="color: red">*</span></label>
-                  <input type="text" class="form-control" id="city" name="city" placeholder="Davao City" required>
+                  <input type="text" class="form-control" id="receiver-city" name="receiver-city" placeholder="Davao City" required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label>State/Province <span style="color: red">*</span></label>
-                  <input type="text" class="form-control" id="state" name="state" placeholder="Davao Del Sur" required>
+                  <input type="text" class="form-control" id="receiver-state" name="receiver-state" placeholder="Davao Del Sur" required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label>Zip Code <span style="color: red">*</span></label>
-                  <input type="text" class="form-control" id="zip-code" name="zip-code" placeholder="1111" required>
+                  <input type="text" class="form-control" id="receiver-zip-code" name="receiver-zip-code" placeholder="1111" required>
                 </div>
               </div>
             </div>
@@ -88,43 +89,43 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="full-name">Full Name <span style="color: red">*</span></label>
-                  <input type="text" class="form-control" id="full-name" name="full-name" placeholder="Enter name" required>
+                  <input type="text" class="form-control" id="sender-name" name="sender-name" placeholder="Enter name" required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="phone-number">Phone Number <span style="color: red">*</span></label>
-                  <input type="text" class="form-control" id="phone-number" name="phone-number" placeholder="09123456789" required>
+                  <input type="text" class="form-control" id="sender-number" name="sender-number" placeholder="09123456789" required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="email">Email Address <span style="color: red">*</span></label>
-                  <input type="text" class="form-control" id="email" name="email" placeholder="sampleemail@gmail.com" required>
+                  <input type="text" class="form-control" id="sender-email" name="sender-email" placeholder="sampleemail@gmail.com" required>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="form-group">
                   <label for="address">Address (Street Name, Building, House No., Barangay) <span style="color: red">*</span></label>
-                  <input type="text" class="form-control" id="address" name="address" placeholder="Enter address" required>
+                  <input type="text" class="form-control" id="sender-address" name="sender-address" placeholder="Enter address" required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="city">City <span style="color: red">*</span></label>
-                  <input type="text" class="form-control" id="city" name="city" placeholder="Davao City" required>
+                  <input type="text" class="form-control" id="sender-city" name="sender-city" placeholder="Davao City" required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="state">State/Province <span style="color: red">*</span></label>
-                  <input type="text" class="form-control" id="state" name="state" placeholder="Davao Del Sur" required>
+                  <input type="text" class="form-control" id="sender-state" name="sender-state" placeholder="Davao Del Sur" required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="zip-code">Zip Code <span style="color: red">*</span></label>
-                  <input type="text" class="form-control" id="zip-code" name="zip-code" placeholder="1111" required>
+                  <input type="text" class="form-control" id="sender-zip-code" name="sender-zip-code" placeholder="1111" required>
                 </div>
               </div>
             </div>            
@@ -214,7 +215,7 @@
             </div>
             <!-- /.row -->
             <div>
-              <button type="button" class="btn btn-primary btn-lg">Primary</button>
+              <button type="submit" name="order-submit" class="btn btn-primary btn-lg">Submit</button>
             </div>
           </div>
         </div>
