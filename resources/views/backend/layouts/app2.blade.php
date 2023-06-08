@@ -46,7 +46,8 @@
             max-width: 100px;
         }
 
-        .nav-link {
+        .nav-link,
+        .content-wrapper {
             height: unset !important;
         }
     </style>
