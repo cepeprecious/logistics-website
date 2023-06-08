@@ -157,8 +157,8 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-                        <i class="fas fa-expand-arrows-alt"></i>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modal-logout">
+                        <i class="fas fa-power-off"></i>
                     </a>
                 </li>
 
@@ -166,7 +166,7 @@
         </nav>
 
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar main-sidebar-custom sidebar-dark-primary elevation-4">
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="{{ url('admin/dashboard') }}" class="brand-link">
                 <span class="brand-text font-weight-light">LOGISTICS WEBSITE</span>
@@ -258,11 +258,6 @@
 
                     </ul>
                 </nav>
-            </div>
-
-            <div class="sidebar-custom">
-                <a href="{{ url('admin/settings-and-configuration') }}" class="btn btn-link"><i class="fas fa-cogs"></i></a>
-                <a href="#" class="btn btn-secondary hide-on-collapse pos-right" data-toggle="modal" data-target="#modal-logout">Logout</a>
             </div>
         </aside>
 
