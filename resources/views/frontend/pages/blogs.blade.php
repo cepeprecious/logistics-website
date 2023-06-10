@@ -20,24 +20,25 @@
             <div class="d-flex flex-column flex-md-row mb-5">
               <img src="{{ asset('assets/frontend/img/blog img 1.png') }}" alt="">
               <div class="ms-md-5 pt-4">
-                <h1 class="mb-1 color-2">LOREM IPSUM DOLOR SIT</h1>
+                <h1 class="mb-1 color-2">PACKAGING AND LABELING</h1>
                 <p class="mb-3 text-decoration-underline color-2 font-rubik">By Admin / April 05, 2023</p>
                 <p class="font-montserrat text-justify">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
-                  viverra maecenas accumsan lacus vel facilisis.
+                Proper packaging and labeling are essential to protect your goods during transit and ensure smooth handling. We'll delve into
+                the importance of sturdy packaging materials, correct box sizes, and effective cushioning techniques. Additionally, we'll 
+                provide guidance on accurate labeling, including barcodes, tracking numbers, and other required documentation.
                 </p>
                 <a class="btn px-0 mt-2 color-1 fw-bold font-rubik" href="{{ url('blogs-single') }}"><i class="fa-solid fa-arrow-right me-1"></i> Read More</a>
               </div>
             </div>
             <div class="d-flex flex-column flex-md-row mb-5">
               <div class="me-md-5 pt-4 order-2 order-md-1">
-                <h1 class="mb-1 color-2">LOREM IPSUM DOLOR SIT</h1>
+                <h1 class="mb-1 color-2">SUSTAINABLE SHIPPING METHODS</h1>
                 <p class="mb-3 text-decoration-underline color-2 font-rubik">By Admin / April 05, 2023</p>
                 <p class="font-montserrat text-justify">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
-                  viverra maecenas accumsan lacus vel facilisis.
+                In the current environmentally sensitive world, implementing sustainable shipment procedures is not only ethical but also 
+                presents a chance to highlight your dedication to environmentally friendly operations. We'll look at environmentally friendly
+                packaging solutions, carbon offset schemes, and strategies to reduce waste and emissions. Including sustainability in your 
+                shipping process not only supports global objectives but also appeals to customers that care about the environment.
                 </p>
                 <a class="btn px-0 mt-2 color-1 fw-bold font-rubik" href="{{ url('blogs-single') }}"><i class="fa-solid fa-arrow-right me-1"></i> Read More</a>
               </div>
@@ -46,24 +47,26 @@
             <div class="d-flex flex-column flex-md-row mb-5">
               <img src="{{ asset('assets/frontend/img/blog img 1.png') }}" alt="">
               <div class="ms-md-5 pt-4">
-                <h1 class="mb-1 color-2">LOREM IPSUM DOLOR SIT</h1>
+                <h1 class="mb-1 color-2">BUILDING LONG-TERM CONNECTIONS WITH CUSTOMERS</h1>
                 <p class="mb-3 text-decoration-underline color-2 font-rubik">By Admin / April 05, 2023</p>
                 <p class="font-montserrat text-justify">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
-                  viverra maecenas accumsan lacus vel facilisis.
+                Strong client relationships and loyalty are strengthened by exceptional shipment experiences. Throughout the shipment process,
+                we'll look at methods for delivering excellent customer service, such as proactive communication, individualized tracking 
+                updates, and responsive support channels. By providing exceptional customer service, you may stand out from other businesses 
+                and develop brand advocates who will use your services often.
                 </p>
                 <a class="btn px-0 mt-2 color-1 fw-bold font-rubik" href="{{ url('blogs-single') }}"><i class="fa-solid fa-arrow-right me-1"></i> Read More</a>
               </div>
             </div>
             <div class="d-flex flex-column flex-md-row mb-5">
               <div class="me-md-5 pt-4 order-2 order-md-1">
-                <h1 class="mb-1 color-2">LOREM IPSUM DOLOR SIT</h1>
+                <h1 class="mb-1 color-2">RISK MANAGEMENT AND INSURANCE</h1>
                 <p class="mb-3 text-decoration-underline color-2 font-rubik">By Admin / April 05, 2023</p>
                 <p class="font-montserrat text-justify">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
-                  viverra maecenas accumsan lacus vel facilisis.
+                There are risks involved while transporting products, such as theft, damage, or loss. We'll talk about how important risk 
+                reduction techniques and insurance are for safeguarding your shipments. You can have peace of mind and financial security
+                in case of unanticipated occurrences by being aware of the different forms of insurance that are available, evaluating risk 
+                factors, and working with reliable insurers.
                 </p>
                 <a class="btn px-0 mt-2 color-1 fw-bold font-rubik" href="{{ url('blogs-single') }}"><i class="fa-solid fa-arrow-right me-1"></i> Read More</a>
               </div>
@@ -98,19 +101,19 @@
                   <div class="post-item mt-3 d-flex align-items-center text-black">
                     <img src="{{ asset('assets/frontend/img/TEAM 4.jpg') }}" alt="">
                     <div>
-                      <h4><a href="blog-details.html" class="text-decoration-none" style="font-size: 18px">Nam Elit Agna, Endrerit Sit Amet</a></h4>
+                      <h4><a href="blog-details.html" class="text-decoration-none text-justify" style="font-size: 18px">Warehouse Management Best Practices for Efficient Inventory Control</a></h4>
                     </div>
                   </div>
                   <div class="post-item mt-4 d-flex align-items-center text-black">
                     <img src="{{ asset('assets/frontend/img/TEAM 4.jpg') }}" alt="">
                     <div>
-                      <h4><a href="blog-details.html" class="text-decoration-none" style="font-size: 18px">Nam Elit Agna, Endrerit Sit Amet</a></h4>
+                      <h4><a href="blog-details.html" class="text-decoration-none" style="font-size: 18px">Optimizing Packaging for Safe and Hassle-Free Deliveries</a></h4>
                     </div>
                   </div>
                   <div class="post-item mt-4 d-flex align-items-center text-black">
                     <img src="{{ asset('assets/frontend/img/TEAM 4.jpg') }}" alt="">
                     <div>
-                      <h4><a href="blog-details.html" class="text-decoration-none" style="font-size: 18px">Nam Elit Agna, Endrerit Sit Amet</a></h4>
+                      <h4><a href="blog-details.html" class="text-decoration-none" style="font-size: 18px">The Art of Hassle-Free Delivery: How to Ensure a Seamless Customer Experience</a></h4>
                     </div>
                   </div>
                 </div>

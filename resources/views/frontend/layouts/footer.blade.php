@@ -29,15 +29,15 @@
           <h4 class="fs-5">Contact Us</h4>
           <div class="d-flex align-items-center">
             <i class="fa-solid fa-location-dot fa-2xl me-3 color-1"></i>
-            <p class="m-0 fs-6 font-rubik">At vero eos et accusamus 91758 Pirea, Tahiti</p>
+            <p class="m-0 fs-6 font-rubik"> Door 8, FAB Bldg., F.S Dizon Rd., Bacaca, Barangay 19-B (Pob.) Davao City 8000</p>
           </div>
           <div class="d-flex align-items-center my-5">
             <i class="fa-solid fa-phone fa-2xl me-3 color-1"></i>
-            <p class="m-0 fs-5 font-rubik">00 00 00 00 00</p>
+            <p class="m-0 fs-5 font-rubik">+63 917 639 2247</p>
           </div>
           <div class="d-flex align-items-center">
             <i class="fa-solid fa-envelope fa-2xl me-3 color-1"></i>
-            <p class="m-0 fs-5 font-rubik">contactme@gmail.com</p>
+            <p class="m-0 fs-5 font-rubik">marketing@rwebsolutions.com.ph</p>
           </div>
         </div>
       </div>

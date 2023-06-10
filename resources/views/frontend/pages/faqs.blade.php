@@ -22,52 +22,52 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Lorem Ipsum
+                  How can I experience hassle-free delivery with your logistics services?
                   </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionOne">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua.
+                  <div class="accordion-body text-justify">
+                  We prioritize hassle-free delivery by providing seamless and efficient services. We offer advanced tracking systems, 
+                  flexible delivery options, reliable and timely deliveries, proactive communication, and easy returns and exchanges to ensure a smooth and convenient experience for our customers.
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Lorem Ipsum
+                  How do you ensure reliable and timely deliveries?
                   </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionOne">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua.
+                  <div class="accordion-body text-justify">
+                  We prioritize reliability and timeliness in our delivery services. Our dedicated team and optimized delivery networks work
+                  diligently to ensure that your goods are transported safely and arrive at their destination within the specified timeframe, minimizing any delays or disruptions.
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header">
+                <h2 class="accordion-header ">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Lorem Ipsum
+                  How do you ensure the security and safety of deliveries?
                   </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionOne">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua.
+                  <div class="accordion-body text-justify">
+                  The security and safety of your deliveries are of utmost importance to us. We take necessary measures, including proper
+                  packaging, handling protocols, and employing security systems, to ensure that your goods are protected throughout the transportation process, providing you with peace of mind.
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Lorem Ipsum
+                  What sets your logistics services apart for a hassle-free delivery experience?
                   </button>
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionOne">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua.
+                  <div class="accordion-body text-justify">
+                  We differentiate ourselves by focusing on seamless and convenient services. Our commitment to advanced tracking, flexible 
+                  delivery options, reliable deliveries, proactive communication, and easy returns and exchanges ensures a hassle-free experience for our customers, making us a trusted choice for hassle-free delivery.
                   </div>
                 </div>
               </div>
@@ -78,52 +78,58 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Lorem Ipsum
+                  What happens if there is a delay or an issue with my delivery?
                   </button>
                 </h2>
                 <div id="collapseFive" class="accordion-collapse collapse show" data-bs-parent="#accordionTwo">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua.
+                  <div class="accordion-body text-justify">
+                  While we make every effort to ensure timely and smooth deliveries, unforeseen circumstances may occasionally arise. In the 
+                  event of a delay or issue with your delivery, our customer support team is readily available to assist you. We will promptly investigate the situation and take appropriate actions to resolve any issues and ensure that your delivery is completed satisfactorily.
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    Lorem Ipsum
+                  What steps do you take to guarantee the quality of my product while it is in transit?
                   </button>
                 </h2>
                 <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionTwo">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua.
+                  <div class="accordion-body text-justify">
+                  Our major goal is to maintain the integrity of your package. We handle and safeguard your products during transit with
+                  extreme care. This entails employing the proper packaging materials, putting quality control procedures in place, and 
+                  making sure that loading and unloading procedures are secure. We also work with trustworthy carriers who put safety at the
+                  forefront when handling and moving products.
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Lorem Ipsum
+                  Do you provide services for fragile items or special handling?
                   </button>
                 </h2>
                 <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionTwo">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua.
+                  <div class="accordion-body text-justify">
+                  Absolutely, we provide special handling services for delicate or fragile objects. Our skilled logistics specialists are trained 
+                  to handle such things with special care, making use of the proper packaging materials and implementing the required safety
+                  measures throughout shipping. If you have any fragile items, please let us know when placing your order so we can make sure
+                  they get the extra care they need.
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    Lorem Ipsum
+                  Are your delivery services environmentally friendly?
                   </button>
                 </h2>
                 <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionTwo">
-                  <div class="accordion-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua.
+                  <div class="accordion-body text-justify">
+                  We are committed to minimizing our environmental impact and promoting sustainability in our operations. We strive to 
+                  optimize delivery routes, reduce carbon emissions, and implement eco-friendly practices throughout our logistics processes.
+                  This includes utilizing fuel-efficient vehicles, promoting recycling and waste reduction, and exploring innovative solutions
+                  to make our delivery services more environmentally friendly.
                   </div>
                 </div>
               </div>

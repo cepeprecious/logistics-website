@@ -11,7 +11,7 @@
             <div class="d-flex align-items-center w-100 h-100">
               <div class="text-white" style="max-width: 800px;">
                 <h1 class="fw-medium mb-5">EXPERIENCE THE <span class="font-rubik color-1">HASSLE-FREE <br class="d-none d-md-block">DELIVERY</span></h1>
-                <p class="mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque quaerat aliquid non dicta iusto tempore nam omnis voluptas voluptate consequuntur? Dolor quidem excepturi placeat quia?</p>
+                <p class="mb-5">Experience hassle-free delivery: Effortlessly receive your goods with seamless tracking, flexible options, and streamlined processes.</p>
                 <a href="" class="btn btn-1 btn-border-left">LEARN MORE</a>
               </div>
             </div>
@@ -26,8 +26,8 @@
           <div class="d-flex flex-wrap justify-content-center gap-5">
             <div class="item shadow">
               <span class="fs-12px fw-bold font-rubik color-1">OUR SERVICES</span>
-              <h4 class="color-2 fw-bold mb-4">Lorem Ipsum</h4>
-              <p class="fs-12px mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit exercitationem aliquid vero voluptate iste cumque earum ea voluptatibus? Voluptates, sint. Reprehenderit voluptatibus, eius doloremque quis sapiente veritatis nam neque consequuntur ipsa libero officia commodi quas, eum enim rem assumenda, corrupti illo hic fugit placeat asperiores blanditiis reiciendis. Quam, minus debitis.</p>
+              <h4 class="color-2 fw-bold mb-4">Advanced Tracking Systems</h4>
+              <p class="fs-12px mb-5 text-justify">One of the essential elements of hassle-free delivery is transparency. Customers want to know where their package is at any given time. Businesses are incorporating advanced tracking systems that enable customers to monitor their deliveries in real-time. These systems provide timely updates, estimated delivery times, and even the ability to communicate with the delivery personnel, ensuring that customers are always in the loop.</p>
               <div class="d-flex align-items-center color-1">
                 <i class="fa-solid fa-arrow-right-long fs-6 me-2"></i>
                 <a href="" class="fs-12px fw-bold font-rubik">LEARN MORE</a>
@@ -35,8 +35,8 @@
             </div>
             <div class="item shadow">
               <span class="fs-12px fw-bold font-rubik color-1">OUR SERVICES</span>
-              <h4 class="color-2 fw-bold mb-4">Lorem Ipsum</h4>
-              <p class="fs-12px mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit exercitationem aliquid vero voluptate iste cumque earum ea voluptatibus? Voluptates, sint. Reprehenderit voluptatibus, eius doloremque quis sapiente veritatis nam neque consequuntur ipsa libero officia commodi quas, eum enim rem assumenda, corrupti illo hic fugit placeat asperiores blanditiis reiciendis. Quam, minus debitis.</p>
+              <h4 class="color-2 fw-bold mb-4">Flexible Delivery Options</h4>
+              <p class="fs-12px mb-5 text-justify">To cater to the diverse needs of customers, companies are offering flexible delivery options. This includes providing choices such as home delivery, office delivery, or pickup from a nearby location. Customers can select the option that suits them best, ensuring convenience and minimizing any potential inconvenience caused by missed deliveries.</p>
               <div class="d-flex align-items-center color-1">
                 <i class="fa-solid fa-arrow-right-long fs-6 me-2"></i>
                 <a href="" class="fs-12px fw-bold font-rubik">LEARN MORE</a>
@@ -44,8 +44,8 @@
             </div>
             <div class="item shadow">
               <span class="fs-12px fw-bold font-rubik color-1">OUR SERVICES</span>
-              <h4 class="color-2 fw-bold mb-4">Lorem Ipsum</h4>
-              <p class="fs-12px mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit exercitationem aliquid vero voluptate iste cumque earum ea voluptatibus? Voluptates, sint. Reprehenderit voluptatibus, eius doloremque quis sapiente veritatis nam neque consequuntur ipsa libero officia commodi quas, eum enim rem assumenda, corrupti illo hic fugit placeat asperiores blanditiis reiciendis. Quam, minus debitis.</p>
+              <h4 class="color-2 fw-bold mb-4">Reliable and Timely Deliveries</h4>
+              <p class="fs-12px mb-5 text-justify">Timeliness is a key aspect of hassle-free delivery, and we prioritize the reliable and punctual transportation of your goods. Our dedicated team and optimized delivery networks work tirelessly to ensure that your package reaches its destination within the specified timeframe, minimizing any delays or disruptions along the way.</p>
               <div class="d-flex align-items-center color-1">
                 <i class="fa-solid fa-arrow-right-long fs-6 me-2"></i>
                 <a href="" class="fs-12px fw-bold font-rubik">LEARN MORE</a>
@@ -63,30 +63,30 @@
             <img src="{{ asset('assets/frontend/img/homepage img 1.png') }}" alt="" class="img-fluid w-100 d-none d-lg-block">
             <div class="text-box color-2">
               <span class="fs-12px fw-bold font-rubik color-1">WE ARE OFFERING THE BEST DELIVERY SERVICES</span>
-              <h1 class="fw-bold">The experts in delivery</h1>
-              <h6 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi asperiores quae, esse labore explicabo similique aliquid voluptatem ipsa doloremque? Aspernatur!</h6>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur repudiandae eaque inventore, illo doloribus minima quam, totam quo minus praesentium, dolorum quasi? Minima laborum blanditiis numquam sapiente quo ad est delectus id iusto doloremque, vel fugiat officia fugit explicabo dolores cumque dolorem error repellendus? Laudantium fuga dolor quas officia aspernatur!</p>
+              <h1 class="fw-bold">The experts in the delivery</h1>
+              <h6 class="fw-bold text-justify">The experts in the delivery, our team combines extensive industry knowledge and a passion for excellence to ensure seamless logistics operations and exceptional service for our customers.</h6>
+              <p class="text-justify">Our experienced team of delivery experts has a proven track record of successfully managing complex logistics operations, ensuring efficient and reliable service.With our team of industry experts, we bring years of experience, exceptional service, and a commitment to delivering your goods efficiently and reliably.</p>
               <div class="ps-4 ps-md-0">
                 <div class="row">
                   <div class="col col-12 col-sm-6">
                     <i class="fa-solid fa-circle"></i>
-                    <span>Lorem ipsum</span>
+                    <span>Courier Services</span>
                   </div>
                   <div class="col col-12 col-sm-6">
                     <i class="fa-solid fa-circle"></i>
-                    <span>Lorem ipsum</span>
+                    <span>Cost-Effective Solutions</span>
                   </div>
                   <div class="col col-12 col-sm-6">
                     <i class="fa-solid fa-circle"></i>
-                    <span>Lorem ipsum</span>
+                    <span>Safety and Security</span>
                   </div>
                   <div class="col col-12 col-sm-6">
                     <i class="fa-solid fa-circle"></i>
-                    <span>Lorem ipsum</span>
+                    <span>Reliable and Timely Delivery</span>
                   </div>
                   <div class="col col-12 col-sm-6">
                     <i class="fa-solid fa-circle"></i>
-                    <span>Lorem ipsum</span>
+                    <span>Professional Handling and Packaging</span>
                   </div>
                 </div>
               </div>
@@ -164,7 +164,7 @@
               <img src="{{ asset('assets/frontend/img/img 3 (HP).jpg') }}" alt="" class="img-fluid w-100">
               <div class="body">
                 <span class="fw-bold color-2">Shipment | May 23, 2023</span>
-                <h2 class="text-black">Lorem ipsum dolor sit amet.</h2>
+                <h2 class="text-black">Delighting Customers with Hassle-Free Delivery</h2>
               </div>
             </div>
 
@@ -172,7 +172,7 @@
               <img src="{{ asset('assets/frontend/img/img 3 (HP).jpg') }}" alt="" class="img-fluid w-100">
               <div class="body">
                 <span class="fw-bold color-2">Shipment | May 23, 2023</span>
-                <h2 class="text-black">Lorem ipsum dolor sit amet.</h2>
+                <h2 class="text-black">Efficient Strategies for Hassle-Free Shipments</h2>
               </div>
             </div>
 
@@ -180,7 +180,7 @@
               <img src="{{ asset('assets/frontend/img/img 3 (HP).jpg') }}" alt="" class="img-fluid w-100">
               <div class="body">
                 <span class="fw-bold color-2">Shipment | May 23, 2023</span>
-                <h2 class="text-black">Lorem ipsum dolor sit amet.</h2>
+                <h2 class="text-black">Delivery Excellence: Expert Strategies</h2>
               </div>
             </div>
 

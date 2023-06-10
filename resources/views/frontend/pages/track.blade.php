@@ -37,11 +37,11 @@
                 <td>April 04, 2023 9:30 AM</td>
               </tr>
               <tr>
-                <td>Accepted at Lorem</td>
+                <td>Accepted at Cebu City</td>
                 <td>April 04, 2023 12:30 PM</td>
               </tr>
               <tr>
-                <td>Arrived at Lorem</td>
+                <td>Arrived at Davao City</td>
                 <td>April 04, 2023 3:30 PM</td>
               </tr>
             </tbody>
@@ -75,11 +75,11 @@
                   <td>April 04, 2023 9:30 AM</td>
                 </tr>
                 <tr>
-                  <td>Accepted at Lorem</td>
+                  <td>Accepted at Cebu City</td>
                   <td>April 04, 2023 12:30 PM</td>
                 </tr>
                 <tr>
-                  <td>Arrived at Lorem</td>
+                  <td>Arrived at Davao City</td>
                   <td>April 04, 2023 3:30 PM</td>
                 </tr>
               </tbody>

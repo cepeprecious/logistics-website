@@ -27,23 +27,24 @@
           <div class="col-lg-5 pt-5 pt-lg-0 ps-2 ps-lg-5">
             <h6 class="color-1">ABOUT US</h6>
             <h1 class="color-2 fw-bold">The Experts in Delivery</h1>
-            <p class="color-2 fs-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p class="color-2 fs-5 text-justify">
+            Our team of logistics experts handles your valuable products with great accuracy and attention to detail, assuring their safe 
+            transit from the point of origin to the point of destination.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul class="fs-6">
-                  <li>Tempor incididunt Amet!</li>
-                  <li>Tempor incididunt Amet!</li>
-                  <li>Tempor incididunt Amet!</li>
-                  <li>Tempor incididunt Amet!</li>
-                  <li>Tempor incididunt Amet!</li>
+                  <li>Safety and Security</li>
+                  <li>Cost-Effective Solutions</li>
+                  <li>Courier Services</li>
+                  <li>Professional Handling and Packaging</li>
+                  <li>Reliable and Timely Delivery</li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul class="fs-6">
-                  <li>Tempor incididunt Amet!</li>
-                  <li>Tempor incididunt Amet!</li>
+                  <li>Hassle-Free Packaging Solutions</li>
+                  <li>Real-Time Delivery Tracking</li>
                 </ul>
               </div>
             </div>
@@ -60,9 +61,10 @@
             <div class="col-lg-6">
               <div class="text-white py-5 ps-4" style="background-color: var(--color-2); height: 450px">
                 <h1 class="mb-4">Why Choose Us?</h1>
-                <p class="fs-3 text-justify m-0" style="padding-right: 110px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusamus quo 
-                  impedit sequi perferendis eaque ullam perspiciatis aliquid quod. Quidem aliquid incidunt, 
-                  amet adipisci facilis nesciunt quam sapiente iste consequuntur!
+                <p class="fs-5 text-justify m-0" style="padding-right: 110px">Choose our logistics services for reliable, efficient, and customer-focused solutions. With extensive industry expertise, we provide customized logistics solutions tailored to your specific needs.
+                 Our streamlined processes, advanced tracking systems, and dedicated team ensure reliable and timely delivery while prioritizing safety and security.
+                  We offer cost-effective solutions, transparent communication, and exceptional customer support throughout the logistics process. 
+                  Trust us to handle your transportation and distribution needs with expertise, efficiency, and a commitment to exceeding your expectations.
                 </p>
               </div>
             </div>
@@ -80,19 +82,19 @@
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-sm-6 col-lg-3 text-center">
-            <h1 class="color-1">000</h1>
+            <h1 class="color-1">936</h1>
+            <span class="fs-5 fw-semi-bold text-white font-rubik">Users</span>
+          </div>
+          <div class="col-sm-6 col-lg-3 text-center">
+            <h1 class="color-1">7,128+</h1>
             <span class="fs-5 fw-semi-bold text-white font-rubik">Lorem Ipsum</span>
           </div>
           <div class="col-sm-6 col-lg-3 text-center">
-            <h1 class="color-1">0,000+</h1>
+            <h1 class="color-1">99+</h1>
             <span class="fs-5 fw-semi-bold text-white font-rubik">Lorem Ipsum</span>
           </div>
           <div class="col-sm-6 col-lg-3 text-center">
-            <h1 class="color-1">00+</h1>
-            <span class="fs-5 fw-semi-bold text-white font-rubik">Lorem Ipsum</span>
-          </div>
-          <div class="col-sm-6 col-lg-3 text-center">
-            <h1 class="color-1">000+</h1>
+            <h1 class="color-1">777+</h1>
             <span class="fs-5 fw-semi-bold text-white font-rubik">Lorem Ipsum</span>
           </div>
         </div>

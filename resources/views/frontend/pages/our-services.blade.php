@@ -20,10 +20,12 @@
             <div class="card">
               <img src="{{ asset('assets/frontend/img/Service img 1.png') }}" class="card-img-top" alt="...">
               <div class="card-body">
-                <h2 class="card-title">Lorem Ipsum</h2>
+                <h2 class="card-title">Advanced Tracking Systems</h2>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua.
+                One of the essential elements of hassle-free delivery is transparency. Customers want to know where their package is at any 
+                given time. Businesses are incorporating advanced tracking systems that enable customers to monitor their deliveries in 
+                real-time. These systems provide timely updates, estimated delivery times, and even the ability to communicate with the 
+                delivery personnel, ensuring that customers are always in the loop.
                 </p>
                 <a href="" class="btn btn-1 btn-border-left" style="float: right">LEARN MORE</a>
               </div>
@@ -33,10 +35,11 @@
             <div class="card">
               <img src="{{ asset('assets/frontend/img/Service img 1.png') }}" class="card-img-top" alt="...">
               <div class="card-body">
-                <h2 class="card-title">Lorem Ipsum</h2>
+                <h2 class="card-title">Flexible Delivery Options</h2>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua.
+                To cater to the diverse needs of customers, companies are offering flexible delivery options. This includes providing
+                choices such as home delivery, office delivery, or pickup from a nearby location. Customers can select the option that 
+                suits them best, ensuring convenience and minimizing any potential inconvenience caused by missed deliveries.
                 </p>
                 <a href="" class="btn btn-1 btn-border-left" style="float: right">LEARN MORE</a>
               </div>
@@ -46,10 +49,11 @@
             <div class="card">
               <img src="{{ asset('assets/frontend/img/Service img 1.png') }}" class="card-img-top" alt="...">
               <div class="card-body">
-                <h2 class="card-title">Lorem Ipsum</h2>
+                <h2 class="card-title">Reliable and Timely Deliveries</h2>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua.
+                Timeliness is a key aspect of hassle-free delivery, and we prioritize the reliable and punctual transportation of your goods.
+                Our dedicated team and optimized delivery networks work tirelessly to ensure that your package reaches its destination within
+                the specified timeframe, minimizing any delays or disruptions along the way.
                 </p>
                 <a href="" class="btn btn-1 btn-border-left" style="float: right">LEARN MORE</a>
               </div>
@@ -59,10 +63,10 @@
             <div class="card">
               <img src="{{ asset('assets/frontend/img/Service img 1.png') }}" class="card-img-top" alt="...">
               <div class="card-body">
-                <h2 class="card-title">Lorem Ipsum</h2>
+                <h2 class="card-title">Dedicated Customer Support</h2>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua.
+                Our team is dedicated to providing exceptional customer support. We are available to assist you throughout the logistics 
+                process, from initial inquiries and planning to post-delivery support, ensuring a positive and hassle-free experience.
                 </p>
                 <a href="" class="btn btn-1 btn-border-left" style="float: right">LEARN MORE</a>
               </div>
