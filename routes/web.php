@@ -42,7 +42,7 @@ Route::middleware(['user-access:user'])->group(function() {
         Route::get('dashboard', 'dashboard');
         Route::get('create-order', 'createOrder');
         Route::get('order-status', 'orderStatus');
-        Route::get('shipment-tracking', 'shipmentTracking');
+        // Route::get('shipment-tracking', 'shipmentTracking');
         Route::get('order-history', 'orderHistory');
         Route::get('address-book', 'addressBook');
         Route::get('personal-profile', 'personalProfile');

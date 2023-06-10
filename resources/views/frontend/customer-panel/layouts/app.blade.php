@@ -222,15 +222,14 @@
                             </a>
                         </li>
 
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="{{ url('shipment-tracking') }}" class="nav-link {{ Request::is('shipment-tracking') ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-home"></i>
                                 <p>
                                     Shipment Tracking
-                                    {{-- <span class="right badge badge-danger">New</span> --}}
                                 </p>
                             </a>
-                        </li>
+                        </li> --}}
 
                         <li class="nav-item">
                             <a href="{{ url('order-history') }}" class="nav-link {{ Request::is('order-history') ? 'active' : '' }}">

@@ -23,10 +23,10 @@ class CustomerController extends Controller
         return view('frontend.customer-panel.pages.order-status');
     }
 
-    public function shipmentTracking()
-    {
-        return view('frontend.customer-panel.pages.shipment-tracking');
-    }
+    // public function shipmentTracking()
+    // {
+    //     return view('frontend.customer-panel.pages.shipment-tracking');
+    // }
 
     public function orderHistory()
     {
