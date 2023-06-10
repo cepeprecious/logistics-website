@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  @yield('meta')
+
   <title>{{ env('APP_NAME') }}</title>
 
   {{-- Style Here --}}
@@ -20,6 +22,20 @@
   @include('frontend.layouts.header')
   @yield('content')
   @include('frontend.layouts.footer')
+
+  {{-- Preloader --}}
+  <div id="preloader">
+    <div class="dot-spinner">
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+    </div>
+  </div>
 </body>
 
 {{-- Script Here --}}
@@ -43,6 +59,19 @@
     });
   });
 </script>
+<script>
+  /**
+   * Preloader
+  */
+  const preloader = document.querySelector('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      // Delay for 1 second (1000 milliseconds)
+      setTimeout(() => {
+        preloader.remove();
+      }, 1000);
+    });
+  }
+</script>
 @yield('script')
-
 </html>

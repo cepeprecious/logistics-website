@@ -30,7 +30,7 @@
     </a>
   </li>
 </ul>
-<hr class="d-block d-lg-none">
+<hr>
 <a href="{{ route('track') }}" class="btn btn-1 fs-14px">
   {{ __('TRACK YOUR PARCEL') }}
 </a>

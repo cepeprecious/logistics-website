@@ -27,8 +27,8 @@
     <section class="section-2">
       <div class="py-5">
         <div class="container">
-          <h1 class=" font-roboto-condensed fw-bold color-2 mb-5">Send us a Message</h1>
-          <form action="">
+          <h1 class="font-roboto-condensed fw-bold color-2 mb-5">Send us a Message</h1>
+          <form id="inquiry" method="POST" action="{{ route('inquiry') }}">
             <div class="row">
               <div class="col-12">
                 <div class="mb-5">
@@ -37,12 +37,12 @@
               </div>
               <div class="col-12 col-lg-6">
                 <div class="mb-5">
-                  <input type="text" class="form-control border-0 rounded-0 shadow-1 p-4" name="phonenum" id="phonenum" placeholder="Phone No.">
+                  <input type="text" class="form-control border-0 rounded-0 shadow-1 p-4" name="phone_number" id="phonenum" placeholder="Phone No.">
                 </div>
               </div>
               <div class="col-12 col-lg-6">
                 <div class="mb-5">
-                  <input type="email" class="form-control border-0 rounded-0 shadow-1 p-4" name="email" id="email" placeholder="Email Address">
+                  <input type="email" class="form-control border-0 rounded-0 shadow-1 p-4" name="email_address" id="email" placeholder="Email Address">
                 </div>
               </div>
               <div class="col-12">
@@ -60,7 +60,76 @@
 @endsection
 
 @section('style')
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.css" integrity="sha512-wJgJNTBBkLit7ymC6vvzM1EcSWeM9mmOu+1USHaRBbHkm6W9EgM0HY27+UtUaprntaYQJF75rc8gjxllKs5OIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 @endsection
 
+<section>
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+</section>
+
 @section('script')
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.js" integrity="sha512-zlWWyZq71UMApAjih4WkaRpikgY9Bz1oXIW5G0fED4vk14JjGlQ1UmkGM392jEULP8jbNMiwLWdM8Z87Hu88Fw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function() {
+      $.ajaxSetup({
+        headers: {
+          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+      });
+
+      $('#inquiry').submit(function(e) {
+        e.preventDefault();
+        var form = $(this);
+        var url = form.attr('action');
+        var data = form.serialize();
+
+        $.ajax({
+          url: url,
+          type: 'POST',
+          data: data,
+
+          success: function(response) {
+            // Handle successful response
+            console.log(response.success);
+            $.toast().reset('all');
+            $.toast({
+              heading: 'Success',
+              text: response.success,
+              showHideTransition: 'slide',
+              icon: 'success',
+              hideAfter: 5000,
+              position: 'top-right',
+              loader: false
+            });
+            $('form input').val('');
+            $('form textarea').val('');
+          },
+
+          error: function(xhr, status, error) {
+            // Handle successful response
+            console.log(xhr.responseText);
+            var errors = JSON.parse(xhr.responseText);
+            $.toast().reset('all');
+            $.each(errors, function(key, value) {
+              if (key == 'errors') {
+                $.each(value, function(key, value2) {
+                  $.toast({
+                    heading: 'Error',
+                    text: value2,
+                    showHideTransition: 'slide',
+                    icon: 'error',
+                    hideAfter: 5000,
+                    position: 'top-right',
+                    loader: false
+                  });
+                });
+              }
+            });
+          }
+
+        });
+
+      });
+    });
+  </script>
 @endsection
