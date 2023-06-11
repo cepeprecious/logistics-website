@@ -31,5 +31,7 @@ class Order extends Model
         'item_value',
         'bags_specification',
         'remarks',
+        'tracking_number',
+        'status',
     ];
 }

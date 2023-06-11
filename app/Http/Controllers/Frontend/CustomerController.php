@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Order;
+use Illuminate\Support\Str;
 
 class CustomerController extends Controller
 {
@@ -20,17 +21,15 @@ class CustomerController extends Controller
 
     public function orderStatus()
     {
-        return view('frontend.customer-panel.pages.order-status');
+        // return view('frontend.customer-panel.pages.order-status');
+        $orders = Order::select('id', 'tracking_number', 'created_at', 'item_category', 'receiver_city', 'status')->get();
+
+        return view('frontend.customer-panel.pages.order-status', compact('orders'));
     }
 
-    // public function shipmentTracking()
-    // {
-    //     return view('frontend.customer-panel.pages.shipment-tracking');
-    // }
-
-    public function orderHistory()
+    public function trackingNumber()
     {
-        return view('frontend.customer-panel.pages.order-history');
+        return view('frontend.customer-panel.pages.tracking-number');
     }
 
     public function addressBook()
@@ -75,7 +74,7 @@ class CustomerController extends Controller
             ]);
 
             // Insert validated form data
-            Order::create([
+            $order = Order::create([
                 'receiver_name' => $validatedData['receiver-name'],
                 'receiver_number' => $validatedData['receiver-number'],
                 'receiver_address' => $validatedData['receiver-address'],
@@ -99,9 +98,28 @@ class CustomerController extends Controller
                 'remarks' => $validatedData['remarks'],
             ]);
 
+            // Retrieve the status value from the request
+            $status = $request->input('status');
+
+            // Set the status on the order object
+            $order->status = $status;
+
+            // Generate a tracking number (you can customize this based on your requirements)
+            $trackingNumber = 'TRK' . strtoupper(Str::random(8));
+
+            // Update the created order with the tracking number
+            $order->tracking_number = $trackingNumber;
+            $order->save();
+
             // Redirect back with success message
-            return redirect()->back()->with('success', 'Form submitted successfully!');
-            // return response()->json(['success' => 'Order submitted successfully!']);
+            // return redirect()->back()->with('success', 'Form submitted successfully!');
+            // return redirect('/tracking-number')->with('success', 'Form submitted successfully!');
+
+            // Redirect to the tracking page with the success message and tracking number
+            return redirect('/tracking-number')->with([
+                'success' => 'Form submitted successfully!',
+                'trackingNumber' => $trackingNumber,
+            ]);
 
         }
     }

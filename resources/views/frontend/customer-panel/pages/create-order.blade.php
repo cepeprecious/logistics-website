@@ -147,6 +147,7 @@
           <!-- /.card-header -->
           <div class="card-body">
             <div class="row">
+              <input type="hidden" name="status" value="Pending">
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="delivery-options">Delivery Options <span style="color: red">*</span></label>
