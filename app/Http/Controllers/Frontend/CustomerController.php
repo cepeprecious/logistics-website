@@ -22,7 +22,12 @@ class CustomerController extends Controller
     public function orderStatus()
     {
         // return view('frontend.customer-panel.pages.order-status');
-        $orders = Order::select('id', 'tracking_number', 'created_at', 'item_category', 'receiver_city', 'status')->get();
+        $orders = Order::select(
+            'id', 'tracking_number', 'created_at', 'item_category', 'receiver_city', 'status',
+            'receiver_name', 'receiver_number', 'receiver_address', 'receiver_state', 'receiver_zip_code',
+            'sender_name', 'sender_number', 'sender_email', 'sender_address', 'sender_city', 'sender_state',
+            'sender_zip_code', 'delivery_options', 'item_name', 'quantity', 'item_value', 'weight', 
+            'bags_specification', 'remarks')->get();
 
         return view('frontend.customer-panel.pages.order-status', compact('orders'));
     }
