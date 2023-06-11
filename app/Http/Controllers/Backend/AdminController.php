@@ -9,6 +9,7 @@ use Maatwebsite\Excel\Facades\Excel;
 // Models
 use App\Models\Inquiry;
 use App\Models\Order;
+use App\Models\User;
 
 // Exports
 use App\Exports\InquiriesExport;
@@ -19,7 +20,9 @@ class AdminController extends Controller
 {
     public function dashboard()
     {
-        return view('backend.modules.dashboard.index');
+        $orders = Order::count();
+        $users = User::where('role', 'user')->count();
+        return view('backend.modules.dashboard.index', compact('orders', 'users'));
     }
 
     public function orderManagement()
@@ -46,7 +49,8 @@ class AdminController extends Controller
 
 
     // ADMIN FUNCTIONS
-    public function orderUpdate(Request $request) {
+    public function orderUpdate(Request $request)
+    {
         $validatedData = $request->validate([
             'id' => 'required|integer',
             'status' => 'required|in:"Pending",
@@ -72,8 +76,36 @@ class AdminController extends Controller
         return back()->with('success', "Successfully updated order with tracking number ({$order->tracking_number})");
     }
 
-    public function orderExport() {
+    public function orderExport()
+    {
         return Excel::download(new OrdersExport, 'orders.xlsx');
+    }
+
+    public function orderChart()
+    {
+        $pending = Order::where('status', 'Pending')->count();
+        $order_received = Order::where('status', 'Order Received')->count();
+        $order_processing = Order::where('status', 'Order Processing')->count();
+        $to_be_shipped = Order::where('status', 'To be Shipped')->count();
+        $order_shipped = Order::where('status', 'Order Shipped')->count();
+        $in_transit = Order::where('status', 'In Transit')->count();
+        $out_for_delivery = Order::where('status', 'Out for Delivery')->count();
+        $delivery_attempted = Order::where('status', 'Delivery Attempted')->count();
+        $delivered = Order::where('status', 'Delivered')->count();
+
+        $response = [
+            'pending' => $pending,
+            'order_received' => $order_received,
+            'order_processing' => $order_processing,
+            'to_be_shipped' => $to_be_shipped,
+            'order_shipped' => $order_shipped,
+            'in_transit' => $in_transit,
+            'out_for_delivery' => $out_for_delivery,
+            'delivery_attempted' => $delivery_attempted,
+            'delivered' => $delivered,
+        ];
+
+        return response()->json($response);
     }
 
 
