@@ -55,13 +55,13 @@ class CustomerController extends Controller
             // Validate the form data
             $validatedData = $request->validate([
                 'receiver-name' => 'required',
-                'receiver-number' => 'required',
+                'receiver-number' => ['required', 'regex:/^(09|\+639)\d{9}$/'],
                 'receiver-address' => 'required',
                 'receiver-city' => 'required',
                 'receiver-state' => 'required',
                 'receiver-zip-code' => 'required',
                 'sender-name' => 'required',
-                'sender-number' => 'required',
+                'sender-number' => ['required', 'regex:/^(09|\+639)\d{9}$/'],
                 'sender-email' => 'required|email',
                 'sender-address' => 'required',
                 'sender-city' => 'required',
@@ -69,13 +69,12 @@ class CustomerController extends Controller
                 'sender-zip-code' => 'required',
                 'delivery-options' => 'required',
                 'item-category' => 'required',
-                'weight' => 'required',
+                'weight' => 'required|integer',
                 'item-value' => 'required',
                 'bags-specification' => 'required',
                 'item-name' => 'required',
-                'quantity' => 'required',
-                'remarks' => 'required',
-
+                'quantity' => 'required|integer',
+                'remarks' => '',
             ]);
 
             // Insert validated form data

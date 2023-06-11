@@ -35,7 +35,7 @@ Route::controller(FrontendController\AuthController::class)->group(function() {
     Route::post('register', 'register');
 });
 
-Route::middleware(['user-access:user'])->group(function() {
+Route::middleware(['user-access:user', 'validateSessionErrors'])->group(function() {
     Route::post('logout', [ FrontendController\AuthController::class, 'logout' ]);
 
     Route::controller(FrontendController\CustomerController::class)->group(function() {
@@ -54,7 +54,7 @@ Route::prefix('admin')->group(function() {
     Route::get('login', [ BackendController\AuthController::class, 'login' ])->name('admin.login');
     Route::post('login', [ BackendController\AuthController::class, 'signIn' ]);
 
-    Route::middleware(['user-access:admin'])->group(function() {
+    Route::middleware(['user-access:admin', 'validateSessionErrors'])->group(function() {
         Route::post('logout', [ BackendController\AuthController::class, 'logout' ]);
 
         Route::controller(BackendController\AdminController::class)->group(function() {
@@ -63,6 +63,9 @@ Route::prefix('admin')->group(function() {
             Route::get('customer-management', 'customerManagement');
             Route::get('drive-and-delivery-personnel-management', 'driveAndDeliveryPersonnelManagement');
             Route::get('settings-and-configuration', 'settingsAndConfiguration');
+
+            Route::post('order/update', 'orderUpdate');
+            Route::get('order/export', 'orderExport');
 
             Route::get('inquiry', 'inquiry');
             Route::delete('inquiry/{id}', 'inquiryDelete');

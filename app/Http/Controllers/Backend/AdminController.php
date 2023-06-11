@@ -8,9 +8,11 @@ use Maatwebsite\Excel\Facades\Excel;
 
 // Models
 use App\Models\Inquiry;
+use App\Models\Order;
 
 // Exports
 use App\Exports\InquiriesExport;
+use App\Exports\OrdersExport;
 
 
 class AdminController extends Controller
@@ -22,7 +24,8 @@ class AdminController extends Controller
 
     public function orderManagement()
     {
-        return view('backend.modules.order-management.index');
+        $orders = Order::all();
+        return view('backend.modules.order-management.index', compact('orders'));
     }
 
     public function customerManagement()
@@ -42,6 +45,38 @@ class AdminController extends Controller
 
 
 
+    // ADMIN FUNCTIONS
+    public function orderUpdate(Request $request) {
+        $validatedData = $request->validate([
+            'id' => 'required|integer',
+            'status' => 'required|in:"Pending",
+            "Order Received",
+            "Order Processing",
+            "To be Shipped",
+            "Order Shipped",
+            "In Transit",
+            "Out for Delivery",
+            "Delivery Attempted",
+            "Delivered"',
+        ]);
+
+        // Find of the order by ID
+        $order = Order::find($validatedData['id']);
+
+        // Change to satus to validated status data
+        $order->status = $validatedData['status'];
+
+        // Save the changes on Order Model
+        $order->save();
+
+        return back()->with('success', "Successfully updated order with tracking number ({$order->tracking_number})");
+    }
+
+    public function orderExport() {
+        return Excel::download(new OrdersExport, 'orders.xlsx');
+    }
+
+
     // CMS
     public function inquiry()
     {
@@ -54,8 +89,6 @@ class AdminController extends Controller
         $inquiries = Inquiry::all()->where('trash', true);
         return view('backend.modules.inquiries.trash', compact('inquiries'));
     }
-
-
 
     public function inquiryDelete(string $id)
     {
@@ -74,7 +107,6 @@ class AdminController extends Controller
 
     public function inquiryExport() 
     {
-        // return 'test';
         return Excel::download(new InquiriesExport, 'inquiries.xlsx');
     }
 
