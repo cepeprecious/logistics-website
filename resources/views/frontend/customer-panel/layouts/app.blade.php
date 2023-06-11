@@ -233,16 +233,6 @@
                         </li> --}}
 
                         <li class="nav-item">
-                            <a href="{{ url('address-book') }}" class="nav-link {{ Request::is('address-book') ? 'active' : '' }}">
-                                <i class="nav-icon fas fa-home"></i>
-                                <p>
-                                    Address Book
-                                    {{-- <span class="right badge badge-danger">New</span> --}}
-                                </p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
                             <a href="{{ url('personal-profile') }}" class="nav-link {{ Request::is('personal-profile') ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-home"></i>
                                 <p>

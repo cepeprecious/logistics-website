@@ -5,13 +5,20 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Order;
+use App\Models\User;
+use App\Http\Controllers\Frontend;
 use Illuminate\Support\Str;
 
 class CustomerController extends Controller
 {
     public function dashboard()
     {
-        return view('frontend.customer-panel.pages.dashboard');
+        $totalOrders = Order::count();
+        $deliveredOrdersCount = Order::where('status', 'delivered')->count();
+        $notDeliveredOrdersCount = $totalOrders - $deliveredOrdersCount;
+
+        return view('frontend.customer-panel.pages.dashboard', compact('totalOrders', 'deliveredOrdersCount', 'notDeliveredOrdersCount'));
+        
     }
 
     public function createOrder()
@@ -26,7 +33,7 @@ class CustomerController extends Controller
             'id', 'tracking_number', 'created_at', 'item_category', 'receiver_city', 'status',
             'receiver_name', 'receiver_number', 'receiver_address', 'receiver_state', 'receiver_zip_code',
             'sender_name', 'sender_number', 'sender_email', 'sender_address', 'sender_city', 'sender_state',
-            'sender_zip_code', 'delivery_options', 'item_name', 'quantity', 'item_value', 'weight', 
+            'sender_zip_code', 'delivery_options', 'fee', 'item_name', 'quantity', 'item_value', 'weight', 
             'bags_specification', 'remarks')->get();
 
         return view('frontend.customer-panel.pages.order-status', compact('orders'));
@@ -37,15 +44,12 @@ class CustomerController extends Controller
         return view('frontend.customer-panel.pages.tracking-number');
     }
 
-    public function addressBook()
-    {
-        return view('frontend.customer-panel.pages.address-book');
-    }
+    // public function personalProfile()
+    // {
+    //     $user = Auth::user();
 
-    public function personalProfile()
-    {
-        return view('frontend.customer-panel.pages.personal-profile');
-    }
+    //     return view('frontend.customer-panel.pages.personal-profile');
+    // }
 
     // Customer Panel
     public function order(Request $request)
@@ -77,6 +81,8 @@ class CustomerController extends Controller
                 'remarks' => '',
             ]);
 
+            $fee = $request->input('fee');
+
             // Insert validated form data
             $order = Order::create([
                 'receiver_name' => $validatedData['receiver-name'],
@@ -93,6 +99,7 @@ class CustomerController extends Controller
                 'sender_state' => $validatedData['sender-state'],
                 'sender_zip_code' => $validatedData['sender-zip-code'],
                 'delivery_options' => $validatedData['delivery-options'],
+                'fee' => $fee,
                 'item_name' => $validatedData['item-name'],
                 'quantity' => $validatedData['quantity'],
                 'item_category' => $validatedData['item-category'],

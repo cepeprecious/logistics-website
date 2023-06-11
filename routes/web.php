@@ -33,6 +33,12 @@ Route::controller(FrontendController\AuthController::class)->group(function() {
     Route::get('login', 'login')->name('login');
     Route::post('login', 'signIn');
     Route::post('register', 'register');
+    Route::get('personal-profile', 'personalProfile');
+    // Update
+    Route::post('update-username', 'updateUsername')->name('updateUsername');
+    Route::post('update-name', 'updateName')->name('updateName');
+    Route::post('update-email', 'updateEmail')->name('updateEmail');
+    Route::post('update-phone-number', 'updatePhoneNumber')->name('updatePhoneNumber');
 });
 
 Route::middleware(['user-access:user', 'validateSessionErrors'])->group(function() {
@@ -43,8 +49,7 @@ Route::middleware(['user-access:user', 'validateSessionErrors'])->group(function
         Route::get('create-order', 'createOrder');
         Route::get('order-status', 'orderStatus');
         Route::get('tracking-number', 'trackingNumber');
-        Route::get('address-book', 'addressBook');
-        Route::get('personal-profile', 'personalProfile');
+        // Route::get('personal-profile', 'personalProfile');
         Route::post('order-submit', 'order');
     });
 

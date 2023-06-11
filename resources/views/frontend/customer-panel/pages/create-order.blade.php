@@ -151,7 +151,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="delivery-options">Delivery Options <span style="color: red">*</span></label>
-                  <select class="form-control" id="delivery-options" name="delivery-options" required>
+                  <select class="form-control" id="delivery-options" name="delivery-options" required onchange="updateFee()">
                     <option>Drop off to branches</option>
                     <option>Door-to-Door Pickup</option>
                   </select>
@@ -159,9 +159,10 @@
               </div>
               <div class="col-md-6">
                 <div class="text-right">
-                  <h1>Fee: <span class="text-primary">10</span></h1>
+                  <h1>Fee: <span id="fee" name="fee" class="text-primary">0</span></h1>
+                  <input type="hidden" id="fee-input" name="fee" value="0">
                 </div>
-              </div>
+              </div>              
             </div>
             <div class="row">
               <div class="col-md-4">
@@ -187,7 +188,7 @@
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <label for="weight">Weight <span style="color: red">*</span></label>
+                  <label for="weight">Weight(kg) <span style="color: red">*</span></label>
                   <input type="text" class="form-control" id="weight" name="weight" placeholder="Enter ..." required>
                 </div>
               </div>
@@ -230,8 +231,18 @@
 
 @section('script')
 <script>
-  $(document).ready(function() {
-    $('.select2').select2();
-  }); 
+  function updateFee() {
+    var deliveryOption = document.getElementById("delivery-options").value;
+    var fee = 0; // Default fee value
+
+    if (deliveryOption === "Door-to-Door Pickup") {
+      fee = 100; // Update fee for door-to-door delivery
+    } else if (deliveryOption === "Drop off to branches") {
+      fee = 50; // Update fee for pickup
+    }
+
+    document.getElementById("fee").textContent = fee;
+    document.getElementById("fee-input").value = fee; // Set fee value in the hidden input field
+  }
 </script>
 @endsection

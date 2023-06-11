@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 
 class AuthController extends Controller
@@ -79,5 +80,60 @@ class AuthController extends Controller
     {
         Auth::logout();
         return redirect('login');
+    }
+
+    public function personalProfile()
+    {
+        $user = Auth::user();
+
+        return view('frontend.customer-panel.pages.personal-profile', compact('user'));
+    }
+
+    public function updateUsername(Request $request)
+    {
+        // Validate the request data
+        $request->validate([
+            'username' => 'required|string|max:255',
+        ]);
+
+        // Update the username in the database
+        $user = User::find(auth()->user()->id);
+        $user->username = $request->input('username');
+        $user->save();
+
+        // Redirect back with a success message
+        return redirect()->back()->with('success', 'Username updated successfully.');
+    }
+
+    public function updateEmail(Request $request)
+    {
+        // Validate the request data
+        $request->validate([
+            'email' => 'required|email|max:255',
+        ]);
+
+        // Update the email in the database
+        $user = User::find(auth()->user()->id);
+        $user->email = $request->input('email');
+        $user->save();
+
+        // Redirect back with a success message
+        return redirect()->back()->with('success', 'Email updated successfully.');
+    }
+
+    public function updatePhoneNumber(Request $request)
+    {
+        // Validate the request data
+        $request->validate([
+            'phone_number' => 'required|string|max:255',
+        ]);
+
+        // Update the phone number in the database
+        $user = User::find(auth()->user()->id);
+        $user->phone_number = $request->input('phone_number');
+        $user->save();
+
+        // Redirect back with a success message
+        return redirect()->back()->with('success', 'Phone number updated successfully.');
     }
 }

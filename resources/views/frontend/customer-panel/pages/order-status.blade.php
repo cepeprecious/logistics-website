@@ -79,7 +79,7 @@
               <p style="font-weight: bold">Tracking Number: <span id="tracking-number"></span></p>
             </div>
             <div class="col-lg-4">
-              <p style="font-weight: bold">Fee: </p>
+              <p style="font-weight: bold">Fee: <span id="fee"></span></p>
             </div>
             <div class="col-lg-4">
               <p style="font-weight: bold">Date/Time: <span id="order-date-time"></span></p>
@@ -212,6 +212,7 @@
       modal.find('#sender-zip-code').text(order.sender_zip_code);
 
       modal.find('#delivery-options').text(order.delivery_options);
+      modal.find('#fee').text(order.fee);
       modal.find('#item-name').text(order.item_name);
       modal.find('#quantity').text(order.quantity);
       modal.find('#weight').text(order.weight);

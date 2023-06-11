@@ -24,6 +24,7 @@ class Order extends Model
         'sender_state',
         'sender_zip_code',
         'delivery_options',
+        'fee',
         'item_name',
         'quantity',
         'item_category',
