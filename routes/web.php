@@ -71,6 +71,7 @@ Route::prefix('admin')->group(function() {
 
             Route::post('order/update', 'orderUpdate');
             Route::get('order/export', 'orderExport');
+            Route::get('order/chart-js', 'orderChart');
 
             Route::get('inquiry', 'inquiry');
             Route::delete('inquiry/{id}', 'inquiryDelete');
