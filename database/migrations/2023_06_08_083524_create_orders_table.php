@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users');
             $table->string('receiver_name');
             $table->string('receiver_number');
             $table->string('receiver_address');
@@ -27,6 +29,7 @@ return new class extends Migration
             $table->string('sender_state');
             $table->string('sender_zip_code');
             $table->string('delivery_options');
+            $table->integer('fee');
             $table->string('item_name')->nullable();
             $table->integer('quantity')->nullable();
             $table->string('item_category');
@@ -34,6 +37,8 @@ return new class extends Migration
             $table->float('item_value');
             $table->string('bags_specification');
             $table->text('remarks')->nullable();
+            $table->string('tracking_number')->nullable();
+            $table->string('status')->default('Pending');
             $table->timestamps();
         });
     }

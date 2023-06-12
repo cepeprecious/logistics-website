@@ -22,12 +22,12 @@
                     <div class="card card-primary card-outline">
                         <div class="card-body box-profile">
                             <div class="text-center">
-                                <img class="profile-user-img img-fluid img-circle" src="{{ asset('assets/admin/img/user4-128x128.jpg') }}" alt="User profile picture">
+                                <img class="profile-user-img img-fluid img-circle" src="{{ asset('assets/admin/img/user-icon.jpg') }}" alt="User profile picture" style="height: 150px; width: 150px;">
                             </div>
 
                             <h3 class="profile-username text-center">{{ $user->name }}</h3>
                             <p class="text-muted text-center">{{ $user->role }}</p>
-                            <ul class="list-group list-group-unbordered mb-3">
+                            {{-- <ul class="list-group list-group-unbordered mb-3">
                                 <li class="list-group-item">
                                     <b>Lorem Ipsum</b> <a class="float-right">1,322</a>
                                 </li>
@@ -37,7 +37,7 @@
                                 <li class="list-group-item">
                                     <b>Lorem Ipsum</b> <a class="float-right">13,287</a>
                                 </li>
-                            </ul>
+                            </ul> --}}
 
                             {{-- <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a> --}}
 
@@ -162,29 +162,32 @@
                                 <!-- /.tab-pane -->
 
                                 <div class="tab-pane" id="settings">
-                                    <div class="form-group row">
-                                        <label for="password" class="col-sm-2 col-form-label">Password</label>
-                                        <div class="col-sm-10">
-                                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+                                    <form action="{{ url('change-password') }}" method="POST" class="m-0">
+                                        @csrf
+                                        <div class="form-group row">
+                                            <label for="password" class="col-sm-2 col-form-label">Password</label>
+                                            <div class="col-sm-10">
+                                                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="new-password" class="col-sm-2 col-form-label">New Password</label>
-                                        <div class="col-sm-10">
-                                            <input type="password" class="form-control" id="new-password" name="new_password" placeholder="Enter your new password">
+                                        <div class="form-group row">
+                                            <label for="new-password" class="col-sm-2 col-form-label">New Password</label>
+                                            <div class="col-sm-10">
+                                                <input type="password" class="form-control" id="new-password" name="new_password" placeholder="Enter your new password">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="confirm-password" class="col-sm-2 col-form-label">Confirm Password</label>
-                                        <div class="col-sm-10">
-                                            <input type="password" class="form-control" id="confirm-password" name="confirm_password" placeholder="Confirm your new password">
+                                        <div class="form-group row">
+                                            <label for="password-confirmation" class="col-sm-2 col-form-label">Confirm Password</label>
+                                            <div class="col-sm-10">
+                                                <input type="password" class="form-control" id="password-confirmation" name="new_password_confirmation" placeholder="Confirm your new password">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="offset-sm-2 col-sm-10">
-                                            <button type="submit" class="btn btn-danger">Submit</button>
+                                        <div class="form-group row">
+                                            <div class="offset-sm-2 col-sm-10">
+                                                <button type="submit" class="btn btn-danger">Submit</button>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
                                 <!-- /.tab-pane -->
                             </div>

@@ -13,8 +13,8 @@ class CustomerController extends Controller
 {
     public function dashboard()
     {
-        $totalOrders = Order::count();
-        $deliveredOrdersCount = Order::where('status', 'delivered')->count();
+        $totalOrders = Order::where('user_id', auth()->user()->id)->count();
+        $deliveredOrdersCount = Order::where('status', 'delivered')->where('user_id', auth()->user()->id)->count();
         $notDeliveredOrdersCount = $totalOrders - $deliveredOrdersCount;
 
         return view('frontend.customer-panel.pages.dashboard', compact('totalOrders', 'deliveredOrdersCount', 'notDeliveredOrdersCount'));
@@ -28,8 +28,7 @@ class CustomerController extends Controller
 
     public function orderStatus()
     {
-        $orders = Order::all();
-
+        $orders = Order::all()->where('user_id', auth()->user()->id);
         return view('frontend.customer-panel.pages.order-status', compact('orders'));
     }
 
@@ -79,6 +78,7 @@ class CustomerController extends Controller
 
             // Insert validated form data
             $order = Order::create([
+                'user_id' => auth()->user()->id,
                 'receiver_name' => $validatedData['receiver-name'],
                 'receiver_number' => $validatedData['receiver-number'],
                 'receiver_address' => $validatedData['receiver-address'],
