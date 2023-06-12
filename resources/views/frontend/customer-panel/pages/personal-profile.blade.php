@@ -157,6 +157,46 @@
                                                 <p id="joinedDate" class="form-control-static m-0">{{ $user->created_at->format('F j, Y') }}</p>
                                             </div>
                                         </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Address:</label>
+                                            <div class="col-sm-10 d-flex justify-content-between align-items-center">
+                                                <p id="phone" class="form-control-static m-0">{{ $user->address }}</p>
+                                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#addressModal">
+                                                    <i class="fa fa-pencil"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">City:</label>
+                                            <div class="col-sm-10 d-flex justify-content-between align-items-center">
+                                                <p id="phone" class="form-control-static m-0">{{ $user->city }}</p>
+                                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#cityModal">
+                                                    <i class="fa fa-pencil"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">State Provice:</label>
+                                            <div class="col-sm-10 d-flex justify-content-between align-items-center">
+                                                <p id="phone" class="form-control-static m-0">{{ $user->state_province }}</p>
+                                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#stateModal">
+                                                    <i class="fa fa-pencil"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Zip Code:</label>
+                                            <div class="col-sm-10 d-flex justify-content-between align-items-center">
+                                                <p id="phone" class="form-control-static m-0">{{ $user->zip_code }}</p>
+                                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#zipCodeModal">
+                                                    <i class="fa fa-pencil"></i>
+                                                </button>
+                                            </div>
+                                        </div>
                                     </form>
                                 </div>
                                 <!-- /.tab-pane -->
@@ -311,6 +351,130 @@
                             <label for="phone" class="col-sm-2 col-form-label">Phone Number</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" id="phone_number" name="phone_number" placeholder="Enter your phone number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" id="saveChangesBtn">Save changes</button>
+                    </div>
+                </form>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="addressModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="addressModal">Edit address</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="address" action="{{ route('updateAddress') }}" method="POST">
+                    @csrf
+                    <div class="modal-body">
+                        <div class="form-group row">
+                            <label for="phone" class="col-sm-2 col-form-label">Address</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="address" name="address" placeholder="Enter your address">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" id="saveChangesBtn">Save changes</button>
+                    </div>
+                </form>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div class="modal fade" id="cityModal" tabindex="-1" role="dialog" aria-labelledby="cityModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="cityModal">Edit city</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="city" action="{{ route('updateCity') }}" method="POST">
+                    @csrf
+                    <div class="modal-body">
+                        <div class="form-group row">
+                            <label for="phone" class="col-sm-2 col-form-label">City</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="city" name="city" placeholder="Enter your city">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" id="saveChangesBtn">Save changes</button>
+                    </div>
+                </form>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div class="modal fade" id="stateModal" tabindex="-1" role="dialog" aria-labelledby="stateModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="stateModal">Edit state/province</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="state" action="{{ route('updateStateProvince') }}" method="POST">
+                    @csrf
+                    <div class="modal-body">
+                        <div class="form-group row">
+                            <label for="phone" class="col-sm-2 col-form-label">State/Province</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="state" name="state" placeholder="Enter your state/province">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" id="saveChangesBtn">Save changes</button>
+                    </div>
+                </form>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div class="modal fade" id="zipCodeModal" tabindex="-1" role="dialog" aria-labelledby="zipCodeModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="zipCodeModal">Edit zip code</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="zip_code" action="{{ route('updateZipCode') }}" method="POST">
+                    @csrf
+                    <div class="modal-body">
+                        <div class="form-group row">
+                            <label for="phone" class="col-sm-2 col-form-label">Zip Code</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="zip_code" name="zip_code" placeholder="Enter your zip code">
                             </div>
                         </div>
                     </div>

@@ -151,4 +151,52 @@ class AuthController extends Controller
             return back()->with('error', 'Incorrect password');
         }
     }
+
+    public function updateAddress(Request $request) {
+        $validatedData = $request->validate([
+            'address' => 'required',
+        ]);
+
+        $user = User::find(auth()->user()->id);
+        $user->address = $validatedData['address'];
+        $user->save();
+
+        return back()->with('success', 'Address is changed successfully');
+    }
+
+    public function updateCity(Request $request) {
+        $validatedData = $request->validate([
+            'city' => 'required',
+        ]);
+
+        $user = User::find(auth()->user()->id);
+        $user->city = $validatedData['city'];
+        $user->save();
+
+        return back()->with('success', 'City is changed successfully');
+    }
+
+    public function updateStateProvince(Request $request) {
+        $validatedData = $request->validate([
+            'state' => 'required',
+        ]);
+
+        $user = User::find(auth()->user()->id);
+        $user->state_province = $validatedData['state'];
+        $user->save();
+
+        return back()->with('success', 'State is changed successfully');
+    }
+
+    public function updateZipCode(Request $request) {
+        $validatedData = $request->validate([
+            'zip_code' => 'required',
+        ]);
+
+        $user = User::find(auth()->user()->id);
+        $user->zip_code = $validatedData['zip_code'];
+        $user->save();
+
+        return back()->with('success', 'Zip Code is changed successfully');
+    }
 }
