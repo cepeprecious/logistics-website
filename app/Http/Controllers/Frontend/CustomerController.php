@@ -110,7 +110,9 @@ class CustomerController extends Controller
             $order->status = $status;
 
             // Generate a tracking number (you can customize this based on your requirements)
-            $trackingNumber = 'TRK' . strtoupper(Str::random(8));
+            do {
+                $trackingNumber = 'TRK' . strtoupper(Str::random(8));
+            } while (Order::where('tracking_number', $trackingNumber)->exists());
 
             // Update the created order with the tracking number
             $order->tracking_number = $trackingNumber;
