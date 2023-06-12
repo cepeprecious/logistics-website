@@ -27,7 +27,7 @@
 
                             <h3 class="profile-username text-center">{{ $user->name }}</h3>
                             <p class="text-muted text-center">{{ $user->role }}</p>
-                            <ul class="list-group list-group-unbordered mb-3">
+                            {{-- <ul class="list-group list-group-unbordered mb-3">
                                 <li class="list-group-item">
                                     <b>Lorem Ipsum</b> <a class="float-right">1,322</a>
                                 </li>
@@ -37,7 +37,7 @@
                                 <li class="list-group-item">
                                     <b>Lorem Ipsum</b> <a class="float-right">13,287</a>
                                 </li>
-                            </ul>
+                            </ul> --}}
 
                             {{-- <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a> --}}
 
@@ -189,7 +189,7 @@
                                 <!-- /.tab-pane -->
                             </div>
                             <!-- /.tab-content -->
-                        </div><!-- /.card-body -->
+                        </div>
                     </div>
                 </div>
                 <!-- /.col -->

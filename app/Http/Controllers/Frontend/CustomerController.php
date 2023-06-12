@@ -125,7 +125,24 @@ class CustomerController extends Controller
                 'success' => 'Form submitted successfully!',
                 'trackingNumber' => $trackingNumber,
             ]);
-
         }
+    }
+
+    public function track(Request $request)
+    {
+        $trackingNumber = $request->input('tracking_number');
+
+        $trackingInfo = Order::where('tracking_number', $trackingNumber)->first();
+
+        if ($trackingInfo) {
+            $shipmentStatus = $trackingInfo->status;
+            $dateTime = $trackingInfo->updated_at;
+        } else {
+            // Handle the case when tracking information is not found
+            $shipmentStatus = 'Tracking information not found';
+            $dateTime = null;
+        }
+
+        return view('track-package', compact('shipmentStatus', 'dateTime'));
     }
 }
