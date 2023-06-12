@@ -31,7 +31,7 @@ Route::controller(FrontendController\PageController::class)->group(function()
     Route::post('inquiry', 'inquiry')->name('inquiry');
 });
 
-Route::controller(FrontendController\AuthController::class)->group(function()
+Route::controller(FrontendController\AuthController::class)->middleware(['validateSessionErrors'])->group(function()
 {
     Route::get('login', 'login')->name('login');
     Route::post('login', 'signIn');
@@ -43,6 +43,10 @@ Route::controller(FrontendController\AuthController::class)->group(function()
     Route::post('update-email', 'updateEmail')->name('updateEmail');
     Route::post('update-phone-number', 'updatePhoneNumber')->name('updatePhoneNumber');
     Route::post('change-password', 'changePassword');
+    Route::post('update-address', 'updateAddress')->name('updateAddress');
+    Route::post('update-city', 'updateCity')->name('updateCity');
+    Route::post('update-state-province', 'updateStateProvince')->name('updateStateProvince');
+    Route::post('update-zip-code', 'updateZipCode')->name('updateZipCode');
 });
 
 Route::middleware(['user-access:user', 'validateSessionErrors'])->group(function()

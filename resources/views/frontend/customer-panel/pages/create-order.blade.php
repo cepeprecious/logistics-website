@@ -107,25 +107,25 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="address">Address (Street Name, Building, House No., Barangay) <span style="color: red">*</span></label>
-                                    <input type="text" class="form-control" id="sender-address" name="sender-address" placeholder="Enter address" required>
+                                    <input type="text" class="form-control" id="sender-address" name="sender-address" placeholder="Enter address" value="{{ auth()->user()->address }}" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="city">City <span style="color: red">*</span></label>
-                                    <input type="text" class="form-control" id="sender-city" name="sender-city" placeholder="Davao City" required>
+                                    <input type="text" class="form-control" id="sender-city" name="sender-city" placeholder="Davao City" value="{{ auth()->user()->city }}" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="state">State/Province <span style="color: red">*</span></label>
-                                    <input type="text" class="form-control" id="sender-state" name="sender-state" placeholder="Davao Del Sur" required>
+                                    <input type="text" class="form-control" id="sender-state" name="sender-state" placeholder="Davao Del Sur" value="{{ auth()->user()->state_province }}" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="zip-code">Zip Code <span style="color: red">*</span></label>
-                                    <input type="text" class="form-control" id="sender-zip-code" name="sender-zip-code" placeholder="1111" required>
+                                    <input type="text" class="form-control" id="sender-zip-code" name="sender-zip-code" placeholder="1111" value="{{ auth()->user()->zip_code }}" required>
                                 </div>
                             </div>
                         </div>
