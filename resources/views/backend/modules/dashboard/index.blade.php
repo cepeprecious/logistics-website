@@ -22,7 +22,7 @@
                             @if (isset($orders))
                                 <h3>{{ $orders }}</h3>
                             @else
-                                <h3>150</h3>
+                                <h3>Loading</h3>
                             @endisset
                             <p>Orders</p>
                     </div>
@@ -38,31 +38,15 @@
             <div class="col-lg-3 col-6">
                 <div class="small-box bg-success">
                     <div class="inner">
-                        <h3>53<sup style="font-size: 20px">%</sup></h3>
-                        <p>Bounce Rate</p>
-                    </div>
-                    <div class="icon">
-                        <i class="ion ion-stats-bars"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">
-                        More info <i class="fas fa-arrow-circle-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-6">
-                <!-- small card -->
-                <div class="small-box bg-warning">
-                    <div class="inner">
-                        @if (isset($users))
-                            <h3>{{ $users }}</h3>
+                        @if (isset($delivered))
+                            <h3>{{ $delivered }}</h3>
                         @else
-                            <h3>44</h3>
+                            <h3>Loading</h3>
                         @endisset
-                        <p>User Registrations</p>
+                        <p>Delivered</p>
                 </div>
                 <div class="icon">
-                    <i class="fas fa-user-plus"></i>
+                    <i class="fas fa-box"></i>
                 </div>
                 <a href="#" class="small-box-footer">
                     More info <i class="fas fa-arrow-circle-right"></i>
@@ -72,43 +56,67 @@
 
         <div class="col-lg-3 col-6">
             <!-- small card -->
-            <div class="small-box bg-danger">
+            <div class="small-box bg-warning">
                 <div class="inner">
-                    <h3>65</h3>
-                    <p>Unique Visitors</p>
-                </div>
-                <div class="icon">
-                    <i class="fas fa-chart-pie"></i>
-                </div>
-                <a href="#" class="small-box-footer">
-                    More info <i class="fas fa-arrow-circle-right"></i>
-                </a>
+                    @if (isset($users))
+                        <h3>{{ $users }}</h3>
+                    @else
+                        <h3>Loading</h3>
+                    @endisset
+                    <p>User Registrations</p>
             </div>
-        </div>
-
-        <div class="col">
-            <!-- PIE CHART -->
-            <div class="card card-danger">
-                <div class="card-header">
-                    <h3 class="card-title">Pie Chart</h3>
-                    <div class="card-tools">
-                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                            <i class="fas fa-minus"></i>
-                        </button>
-                        <button type="button" class="btn btn-tool" data-card-widget="remove">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <canvas id="pieChart" style="min-height: 500px; height: 500px; max-height: 500px; max-width: 100%;"></canvas>
-                </div>
-                <!-- /.card-body -->
+            <div class="icon">
+                <i class="fas fa-user-plus"></i>
             </div>
-            <!-- /.card -->
+            <a href="#" class="small-box-footer">
+                More info <i class="fas fa-arrow-circle-right"></i>
+            </a>
         </div>
-
     </div>
+
+    <div class="col-lg-3 col-6">
+        <!-- small card -->
+        <div class="small-box bg-danger">
+            <div class="inner">
+                @if (isset($pending))
+                    <h3>{{ $pending }}</h3>
+                @else
+                    <h3>Loading</h3>
+                @endisset
+                <p>Pending</p>
+        </div>
+        <div class="icon">
+            <i class="fas fa-spinner"></i>
+        </div>
+        <a href="#" class="small-box-footer">
+            More info <i class="fas fa-arrow-circle-right"></i>
+        </a>
+    </div>
+</div>
+
+<div class="col">
+    <!-- PIE CHART -->
+    <div class="card card-danger">
+        <div class="card-header">
+            <h3 class="card-title">Pie Chart</h3>
+            <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-body">
+            <canvas id="pieChart" style="min-height: 500px; height: 500px; max-height: 500px; max-width: 100%;"></canvas>
+        </div>
+        <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+</div>
+
+</div>
 </div>
 </div>
 @endsection

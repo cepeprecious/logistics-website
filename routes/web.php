@@ -16,7 +16,8 @@ use App\Http\Controllers\Backend as BackendController;
 |
 */
 
-Route::controller(FrontendController\PageController::class)->group(function() {
+Route::controller(FrontendController\PageController::class)->group(function()
+{
     Route::get('', 'home')->name('home');
     Route::get('about-us', 'aboutUs')->name('about-us');
     Route::get('our-services', 'ourServices')->name('our-services');
@@ -29,7 +30,8 @@ Route::controller(FrontendController\PageController::class)->group(function() {
     Route::post('inquiry', 'inquiry')->name('inquiry');
 });
 
-Route::controller(FrontendController\AuthController::class)->group(function() {
+Route::controller(FrontendController\AuthController::class)->group(function()
+{
     Route::get('login', 'login')->name('login');
     Route::post('login', 'signIn');
     Route::post('register', 'register');
@@ -41,10 +43,12 @@ Route::controller(FrontendController\AuthController::class)->group(function() {
     Route::post('update-phone-number', 'updatePhoneNumber')->name('updatePhoneNumber');
 });
 
-Route::middleware(['user-access:user', 'validateSessionErrors'])->group(function() {
+Route::middleware(['user-access:user', 'validateSessionErrors'])->group(function()
+{
     Route::post('logout', [ FrontendController\AuthController::class, 'logout' ]);
 
-    Route::controller(FrontendController\CustomerController::class)->group(function() {
+    Route::controller(FrontendController\CustomerController::class)->group(function()
+    {
         Route::get('dashboard', 'dashboard');
         Route::get('create-order', 'createOrder');
         Route::get('order-status', 'orderStatus');
@@ -55,18 +59,28 @@ Route::middleware(['user-access:user', 'validateSessionErrors'])->group(function
 
 });
 
-Route::prefix('admin')->group(function() {
+Route::prefix('admin')->group(function()
+{
     Route::get('login', [ BackendController\AuthController::class, 'login' ])->name('admin.login');
     Route::post('login', [ BackendController\AuthController::class, 'signIn' ]);
 
-    Route::middleware(['user-access:admin', 'validateSessionErrors'])->group(function() {
-        Route::post('logout', [ BackendController\AuthController::class, 'logout' ]);
-
-        Route::controller(BackendController\AdminController::class)->group(function() {
+    Route::middleware(['user-access:admin', 'validateSessionErrors'])->group(function()
+    {
+        Route::controller(BackendController\AuthController::class)->group(function()
+        {
+            Route::post('logout', 'logout');
+            // Update
+            Route::post('update-username', 'updateUsername');
+            Route::post('update-name', 'updateName');
+            Route::post('update-email', 'updateEmail');
+            Route::post('update-phone-number', 'updatePhoneNumber');
+        });
+        Route::controller(BackendController\AdminController::class)->group(function()
+        {
             Route::get('dashboard', 'dashboard');
             Route::get('order-management', 'orderManagement');
             Route::get('customer-management', 'customerManagement');
-            Route::get('drive-and-delivery-personnel-management', 'driveAndDeliveryPersonnelManagement');
+            // Route::get('drive-and-delivery-personnel-management', 'driveAndDeliveryPersonnelManagement');
             Route::get('settings-and-configuration', 'settingsAndConfiguration');
 
             Route::post('order/update', 'orderUpdate');
