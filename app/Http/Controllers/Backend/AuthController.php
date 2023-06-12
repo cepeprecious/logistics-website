@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 // Models
 use App\Models\User;
@@ -96,5 +97,20 @@ class AuthController extends Controller
 
         // Redirect back with a success message
         return redirect()->back()->with('success', 'Phone number updated successfully.');
+    }
+
+    public function changePassword(Request $request) {
+        $validatedData = $request->validate([
+            'password' => 'required',
+            'new_password' => 'required|confirmed|min:8',
+        ]);
+        if (Hash::check($validatedData['password'], auth()->user()->password)) {
+            $user = User::find(auth()->user()->id);
+            $user->password = Hash::make($validatedData['new_password']);
+            $user->save();
+            return back()->with('success', 'Password is changed successfully');
+        } else {
+            return back()->with('error', 'Incorrect password');
+        }
     }
 }

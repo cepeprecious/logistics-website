@@ -74,6 +74,7 @@ Route::prefix('admin')->group(function()
             Route::post('update-name', 'updateName');
             Route::post('update-email', 'updateEmail');
             Route::post('update-phone-number', 'updatePhoneNumber');
+            Route::post('change-password', 'changePassword');
         });
         Route::controller(BackendController\AdminController::class)->group(function()
         {
