@@ -232,7 +232,7 @@
                                 <!-- /.tab-pane -->
                             </div>
                             <!-- /.tab-content -->
-                        </div><!-- /.card-body -->
+                        </div>
                     </div>
                 </div>
                 <!-- /.col -->

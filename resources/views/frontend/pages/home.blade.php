@@ -26,8 +26,8 @@
           <div class="d-flex flex-wrap justify-content-center gap-5">
             <div class="item shadow">
               <span class="fs-12px fw-bold font-rubik color-1">OUR SERVICES</span>
-              <h4 class="color-2 fw-bold mb-4">Advanced Tracking Systems</h4>
-              <p class="fs-12px mb-5 text-justify">One of the essential elements of hassle-free delivery is transparency. Customers want to know where their package is at any given time. Businesses are incorporating advanced tracking systems that enable customers to monitor their deliveries in real-time. These systems provide timely updates, estimated delivery times, and even the ability to communicate with the delivery personnel, ensuring that customers are always in the loop.</p>
+              <h4 class="color-2 fw-bold mb-4">Transportation and Freight Management</h4>
+              <p class="fs-12px mb-5 text-justify">Our logistics experts specialize in seamless transportation and freight management solutions. We handle the coordination, planning, and execution of your shipments, ensuring they reach their destinations on time and in optimal condition. With access to a vast network of reliable carriers and a deep understanding of various transportation modes, we offer efficient and cost-effective solutions tailored to your specific needs.</p>
               <div class="d-flex align-items-center color-1">
                 <i class="fa-solid fa-arrow-right-long fs-6 me-2"></i>
                 <a href="" class="fs-12px fw-bold font-rubik">LEARN MORE</a>
@@ -35,8 +35,8 @@
             </div>
             <div class="item shadow">
               <span class="fs-12px fw-bold font-rubik color-1">OUR SERVICES</span>
-              <h4 class="color-2 fw-bold mb-4">Flexible Delivery Options</h4>
-              <p class="fs-12px mb-5 text-justify">To cater to the diverse needs of customers, companies are offering flexible delivery options. This includes providing choices such as home delivery, office delivery, or pickup from a nearby location. Customers can select the option that suits them best, ensuring convenience and minimizing any potential inconvenience caused by missed deliveries.</p>
+              <h4 class="color-2 fw-bold mb-4">Product Packaging and Labeling</h4>
+              <p class="fs-12px mb-5 text-justify">Enhance the presentation and marketability of your products with our product packaging and labeling services. We offer customized packaging and labeling solutions that meet branding requirements, ensure product integrity, and comply with industry regulations.</p>
               <div class="d-flex align-items-center color-1">
                 <i class="fa-solid fa-arrow-right-long fs-6 me-2"></i>
                 <a href="" class="fs-12px fw-bold font-rubik">LEARN MORE</a>
@@ -44,8 +44,8 @@
             </div>
             <div class="item shadow">
               <span class="fs-12px fw-bold font-rubik color-1">OUR SERVICES</span>
-              <h4 class="color-2 fw-bold mb-4">Reliable and Timely Deliveries</h4>
-              <p class="fs-12px mb-5 text-justify">Timeliness is a key aspect of hassle-free delivery, and we prioritize the reliable and punctual transportation of your goods. Our dedicated team and optimized delivery networks work tirelessly to ensure that your package reaches its destination within the specified timeframe, minimizing any delays or disruptions along the way.</p>
+              <h4 class="color-2 fw-bold mb-4">Exclusive Shipment Tracking</h4>
+              <p class="fs-12px mb-5 text-justify">Gain exclusive access to real-time status updates and enhanced visibility of your shipments through our advanced tracking system. With our tracking service, you'll have peace of mind knowing that you can stay informed about the progress of your shipments at all times. Our secure and confidential tracking platform ensures that only you have access to this valuable information, allowing you to make informed decisions, proactively address any issues, and provide exceptional customer service. Rest assured that your shipments are in safe hands as we keep you updated every step of the way.</p>
               <div class="d-flex align-items-center color-1">
                 <i class="fa-solid fa-arrow-right-long fs-6 me-2"></i>
                 <a href="" class="fs-12px fw-bold font-rubik">LEARN MORE</a>

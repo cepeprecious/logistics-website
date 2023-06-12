@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Inquiry;
+use App\Models\Order;
 
 class PageController extends Controller
 {
@@ -37,7 +38,29 @@ class PageController extends Controller
     }
 
     public function trackPackage() {
+        
         return view('frontend.pages.track');
+    }
+
+    public function trackingPackage(Request $request) {
+
+        $trackingNumber = $request->input('tracking_number');
+
+        $trackingInfo = Order::where('tracking_number', $trackingNumber)->first();
+
+        if ($trackingInfo) {
+            $shipmentStatus = $trackingInfo->status;
+            $dateTime = $trackingInfo->updated_at;
+        } else {
+            // Handle the case when tracking information is not found
+            $shipmentStatus = 'Tracking information not found';
+            $dateTime = null;
+        }
+
+        return back()
+        ->with('trackingNumber', $trackingNumber)
+        ->with('shipmentStatus', $shipmentStatus)
+        ->with('dateTime', $dateTime);
     }
 
     public function login() {

@@ -140,7 +140,6 @@
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                             <a class="dropdown-item set-status" data-target="#status" href="#">Pending</a>
-                                            <a class="dropdown-item set-status" data-target="#status" href="#">Order Received</a>
                                             <a class="dropdown-item set-status" data-target="#status" href="#">Order Processing</a>
                                             <a class="dropdown-item set-status" data-target="#status" href="#">To be Shipped</a>
                                             <a class="dropdown-item set-status" data-target="#status" href="#">Order Shipped</a>
