@@ -156,7 +156,17 @@
                             response.delivery_attempted,
                             response.delivered,
                         ],
-                        backgroundColor: ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de'],
+                        backgroundColor: [
+                            '#FFD700',
+                            '#32CD32',
+                            '#FFA500',
+                            '#87CEEB',
+                            '#4169E1',
+                            '#FF69B4',
+                            '#FF4500',
+                            '#FF6347',
+                            '#008000',
+                        ],
                     }]
                 }
 

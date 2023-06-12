@@ -42,6 +42,7 @@ Route::controller(FrontendController\AuthController::class)->group(function()
     Route::post('update-name', 'updateName')->name('updateName');
     Route::post('update-email', 'updateEmail')->name('updateEmail');
     Route::post('update-phone-number', 'updatePhoneNumber')->name('updatePhoneNumber');
+    Route::post('change-password', 'changePassword');
 });
 
 Route::middleware(['user-access:user', 'validateSessionErrors'])->group(function()

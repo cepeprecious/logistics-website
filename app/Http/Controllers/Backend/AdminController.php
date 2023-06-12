@@ -23,7 +23,7 @@ class AdminController extends Controller
         $orders = Order::count();
         $users = User::where('role', 'user')->count();
         $delivered = Order::where('status', 'Delivered')->count();
-        $pending = Order::where('status', 'Pedning')->count();
+        $pending = Order::where('status', 'Pending')->count();
         return view('backend.modules.dashboard.index', compact('orders', 'users', 'delivered', 'pending'));
     }
 
@@ -35,7 +35,8 @@ class AdminController extends Controller
 
     public function customerManagement()
     {
-        return view('backend.modules.customer-management.index');
+        $users = User::all()->where('role', 'user');
+        return view('backend.modules.customer-management.index', compact('users'));
     }
 
     // public function driveAndDeliveryPersonnelManagement()

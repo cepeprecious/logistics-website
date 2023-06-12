@@ -1,17 +1,17 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-  <section class="track-package">
-    <section class="banner">
-      <div class="position-relative">
-        <img src="{{ asset('assets/frontend/img/other pages banner.png') }}" alt="" class="banner-img img-fluid w-100 height-350px">
-        {{-- <div class="banner-text w-100 text-white">
+    <section class="track-package">
+        <section class="banner">
+            <div class="position-relative">
+                <img src="{{ asset('assets/frontend/img/other pages banner.png') }}" alt="" class="banner-img img-fluid w-100 height-350px">
+                {{-- <div class="banner-text w-100 text-white">
           <div class="container">
             <h1 class="fw-medium ps-lg-5">TRACK PACKAGE</h1>
           </div>
         </div> --}}
-      </div>
-    </section>
+            </div>
+        </section>
 
     <section class="section-1 mt-5" style="margin-bottom: 200px">
       <div class="container">
@@ -52,7 +52,7 @@
       </div>
     </section>
 
-    {{-- <section class="section-1 mt-5">
+        {{-- <section class="section-1 mt-5">
       <div class="container">
         <h1 class="text-center color-2 mb-4 fw-bold">Track Package</h1>
         <div class="input-group mb-3 mx-auto">
@@ -90,39 +90,39 @@
         </div>
       </div>
     </section>     --}}
-  </section>
+    </section>
 @endsection
 
 @section('style')
-  <style>
-    .section-1 .form-control::placeholder {
-      font-size: 18px;
-      color: var(--color-2)
-    }
+    <style>
+        .section-1 .form-control::placeholder {
+            font-size: 18px;
+            color: var(--color-2)
+        }
 
-    .section-1 .form-control:focus {
-      outline: none;
-      box-shadow: none;
-      border-color: var(--color-2);
-    }
+        .section-1 .form-control:focus {
+            outline: none;
+            box-shadow: none;
+            border-color: var(--color-2);
+        }
 
-    .table td,
-    .table th {
-      padding: 1.5rem;
-      /* Adjust the padding value as needed */
-      font-family: 'Rubik', sans-serif;
-      color: var(--color-2)
-    }
+        .table td,
+        .table th {
+            padding: 1.5rem;
+            /* Adjust the padding value as needed */
+            font-family: 'Rubik', sans-serif;
+            color: var(--color-2)
+        }
 
-    .table th {
-      font-size: 25px;
-      font-weight: bold
-    }
+        .table th {
+            font-size: 25px;
+            font-weight: bold
+        }
 
-    .table td {
-      font-size: 20px;
-    }
-  </style>
+        .table td {
+            font-size: 20px;
+        }
+    </style>
 @endsection
 
 @section('script')
