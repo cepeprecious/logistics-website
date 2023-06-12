@@ -265,13 +265,13 @@
             @yield('content')
         </div>
 
-        <footer class="main-footer">
+        {{-- <footer class="main-footer">
             <strong>Copyright &copy; 2023 <a href="#">R Web Solutions</a>.</strong>
             All rights reserved.
             <div class="float-right d-none d-sm-inline-block">
                 <b>Version</b> 1.0
             </div>
-        </footer>
+        </footer> --}}
     </div>
 
     <div class="modal fade" id="modal-logout" aria-modal="true" role="dialog">
